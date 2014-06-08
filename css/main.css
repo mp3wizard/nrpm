@@ -1,4 +1,20 @@
 @improt "normailize";
+@font-face {
+  font-family: 'TH Chakra Petch';
+  src: url("../font/TH Chakra Petch.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/TH Chakra Petch.eot?#iefix") format("embedded-opentype"), url("../font/TH Chakra Petch.woff") format("woff"), url("../font/TH Chakra Petch.ttf") format("truetype"), url("../font/TH Chakra Petch.svg#face93d9b911af9764273167c93422f0") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: 'TH Chakra Petch';
+  src: url("../font/TH Chakra Petch Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/TH Chakra Petch Bold.eot?#iefix") format("embedded-opentype"), url("../font/TH Chakra Petch Bold.woff") format("woff"), url("../font/TH Chakra Petch Bold.ttf") format("truetype"), url("../font/TH Chakra Petch Bold.svg#e26160a10d8de42068a5e7111b0de664") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700; }
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -79,6 +95,162 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.dark-on-light {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto; }
+
+.light-on-dark, body, html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a {
+  color: #f2f2f2;
+  text-decoration: none; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: Tahoma;
+  font-size: 14px;
+  line-height: 1.5; }
+
+body {
+  width: 986px;
+  margin: 0 auto;
+  background: url("../img/bg-body.jpg") repeat-x; }
+
+header, main {
+  border: solid 1px #22291a;
+  border-top: none;
+  border-bottom: none;
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.75); }
+
+header {
+  background-color: #edffd8; }
+  header h1 {
+    margin: 0;
+    display: block;
+    float: left;
+    background: url("../img/logo-research.png") no-repeat;
+    text-indent: -1000em;
+    height: 87px;
+    width: 387px; }
+  header img {
+    float: right;
+    max-width: 100%; }
+  header h2 {
+    clear: both;
+    margin: 0; }
+    header h2 img {
+      float: none; }
+  header nav {
+    text-align: right;
+    color: #f2f2f2;
+    font-family: "TH Chakra Petch";
+    background-color: #181818;
+    background: url("../img/bg-nav.png") repeat-x left top;
+    height: 37px;
+    line-height: 37px;
+    font-size: 20px;
+    padding: 0 10px; }
+    header nav li {
+      margin: 0;
+      list-style: none;
+      display: inline-block;
+      font-weight: 700; }
+    header nav li:after {
+      content: '|';
+      margin-left: 5px; }
+    header nav li:last-child:after {
+      display: none; }
+    header nav a {
+      font-weight: normal; }
+
+main {
+  padding: 20px 15px 100px;
+  background: white url("../img/bg-main.jpg") repeat-x left top; }
+  main > aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    background-color: #fff7ec;
+    padding: 10px; }
+    main > aside:last-child {
+      margin-right: 0; }
+  main > article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    min-height: 220px;
+    padding: 20px; }
+    main > article:last-child {
+      margin-right: 0; }
+
+nav ul {
+  margin: 0;
+  padding: 0; }
+
+aside {
+  border-radius: 10px;
+  border-right: solid 1px #a19c95;
+  border-bottom: solid 1px #a19c95;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+  min-height: 220px; }
+  aside dl {
+    margin: 0; }
+  aside dt {
+    text-align: center;
+    background: #8abcf3 url("../img/bg-dt.png") repeat-x;
+    height: 27px;
+    line-height: 25px;
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-right: solid 1px #456586;
+    border-bottom: solid 1px #3b5067;
+    border-left: solid 1px #8db6de;
+    border-top: solid 1px #8aaac4; }
+  aside dd {
+    margin: 0;
+    padding: 10px 0; }
+  aside a {
+    color: #2d5d7b;
+    font-size: 14px;
+    background: url("../img/bullet-nav.png") no-repeat 15px center;
+    padding-left: 30px; }
+  aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+
+article h3 {
+  text-align: center;
+  font-family: "TH Chakra Petch";
+  font-size: 24px;
+  margin-top: 0; }
+
+footer {
+  position: relative;
+  top: -70px;
+  padding: 0 1px; }
+  footer img {
+    width: 100%; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -148,21 +320,22 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, main:before,
+.clearfix:after,
+main:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after {
+.clearfix:after, main:after {
   clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.clearfix {
+.clearfix, main {
   *zoom: 1; }
 
 /* ==========================================================================

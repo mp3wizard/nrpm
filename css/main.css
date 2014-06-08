@@ -114,8 +114,11 @@ textarea {
   -moz-osx-font-smoothing: grayscale; }
 
 a {
-  color: #f2f2f2;
+  color: #2d5d7b;
   text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
 
 body, html {
   width: 100%;
@@ -153,6 +156,8 @@ header {
     margin: 0; }
     header h2 img {
       float: none; }
+  header a {
+    color: #f2f2f2; }
   header nav {
     text-align: right;
     color: #f2f2f2;
@@ -192,11 +197,7 @@ main {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 74.41059%;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    min-height: 220px;
-    padding: 20px; }
+    width: 74.41059%; }
     main > article:last-child {
       margin-right: 0; }
 
@@ -218,31 +219,43 @@ aside {
     height: 27px;
     line-height: 25px;
     color: #f2f2f2;
-    font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
     border-right: solid 1px #456586;
     border-bottom: solid 1px #3b5067;
     border-left: solid 1px #8db6de;
-    border-top: solid 1px #8aaac4; }
+    border-top: solid 1px #8aaac4;
+    font-family: "TH Chakra Petch";
+    font-weight: 700;
+    font-size: 20px; }
   aside dd {
     margin: 0;
     padding: 10px 0; }
   aside a {
     color: #2d5d7b;
     font-size: 14px;
-    background: url("../img/bullet-nav.png") no-repeat 15px center;
+    background: url("../img/bullet-nav.png") no-repeat 15px 7px;
     padding-left: 30px; }
   aside ul {
     list-style: none;
     padding: 0;
     margin: 0; }
 
+article div.text {
+  background-color: #fff;
+  border-radius: 5px;
+  min-height: 220px;
+  padding: 20px; }
+article > div.text:nth-child(2) {
+  margin: 0 15px; }
 article h3 {
   text-align: center;
   font-family: "TH Chakra Petch";
   font-size: 24px;
   margin-top: 0; }
+article section {
+  margin-bottom: 40px;
+  position: relative; }
 
 footer {
   position: relative;
@@ -250,6 +263,117 @@ footer {
   padding: 0 1px; }
   footer img {
     width: 100%; }
+
+.breadcumb {
+  border-bottom: solid 2px #2d5e7b;
+  font-family: "TH Chakra Petch";
+  color: #734400;
+  font-size: 26px;
+  margin-top: 0;
+  line-height: 1.1; }
+  .breadcumb a {
+    color: #734400; }
+    .breadcumb a:after {
+      content: '';
+      display: inline-block;
+      height: 9px;
+      width: 7px;
+      background: url("../img/bullet-breadcumb.png") no-repeat;
+      position: relative;
+      top: -1px;
+      margin-left: 8px; }
+
+section.table {
+  margin-bottom: 80px; }
+
+section.table:after {
+  content: '';
+  height: 1px;
+  position: absolute;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+  top: auto;
+  bottom: 2px;
+  left: 6px;
+  right: 6px; }
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #0d2a47;
+  font-size: 12px;
+  position: relative;
+  z-index: 2; }
+.table th {
+  background-color: #9ce9b9;
+  font-weight: normal; }
+.table th, .table td {
+  padding: 3px 5px;
+  text-align: center;
+  border-right: solid 1px #2f5f7c; }
+.table tbody tr td:nth-child(4), .table tbody tr td:nth-child(5) {
+  text-align: left; }
+.table tbody tr td {
+  background-color: #eff3fc; }
+.table tbody tr a {
+  color: #0d2a47; }
+.table tr > th:last-child, .table tr > td:last-child {
+  border-right: none; }
+.table tbody tr:nth-child(2n) td {
+  background-color: #fff; }
+.table caption {
+  height: 23px;
+  line-height: 22px;
+  border-radius: 5px 5px 0 0;
+  color: #0d2a47;
+  font-size: 13px;
+  text-align: left;
+  padding-left: 10px;
+  background-repeat: repeat-x;
+  border: solid 1px; }
+  .table caption:before {
+    content: '';
+    height: 10px;
+    width: 12px;
+    display: inline-block;
+    background: url("../img/bullet-caption.png") no-repeat;
+    margin-right: 5px; }
+  .table caption.blue {
+    background-image: url("../img/bg-caption-blue.png");
+    background-color: #5e8cc4;
+    border-top-color: #bcdbf6;
+    border-right-color: #486888;
+    border-bottom-color: #273a52;
+    border-left-color: #90b6df; }
+  .table caption.red {
+    background-image: url("../img/bg-caption-red.png");
+    background-color: #ff4422;
+    border-top-color: #ffb8b3;
+    border-right-color: #a1392a;
+    border-bottom-color: #6b1d0c;
+    border-left-color: #ff9a95; }
+
+.form {
+  background-color: #fff;
+  padding: 5px;
+  margin-top: -50px;
+  border-bottom: solid 1px #eff3fc; }
+  .form table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    color: #333; }
+  .form tr > td:nth-child(1) {
+    width: 150px;
+    font-weight: bold;
+    background-color: #e7eef2 !important; }
+  .form td {
+    padding: 5px 10px;
+    border-bottom: solid 1px #fff;
+    height: 20px;
+    background-color: #eff3fc;
+    vertical-align: top; }
+  .form tr:nth-child(2n) > td {
+    background-color: #fff; }
 
 /* ==========================================================================
    Helper classes

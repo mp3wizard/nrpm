@@ -400,8 +400,6 @@ section.table:after {
   padding: 3px 5px;
   text-align: center;
   border-right: solid 1px #2f5f7c; }
-.table tbody tr td:nth-child(4), .table tbody tr td:nth-child(5) {
-  text-align: left; }
 .table tbody tr td {
   background-color: #eff3fc; }
 .table tbody tr a {
@@ -443,6 +441,20 @@ section.table:after {
     border-right-color: #a1392a;
     border-bottom-color: #6b1d0c;
     border-left-color: #ff9a95; }
+  .table caption.orange {
+    background-image: url("../img/bg-caption-orange.png");
+    background-color: #c4965e;
+    border-top-color: #f6d7bc;
+    border-right-color: #846644;
+    border-bottom-color: #523f27;
+    border-left-color: #f3c8a3; }
+  .table caption.green {
+    background-image: url("../img/bg-caption-green.png");
+    background-color: #64cd54;
+    border-top-color: #c5fcb6;
+    border-right-color: #45883a;
+    border-bottom-color: #295622;
+    border-left-color: #c5fcb6; }
 
 .form {
   background-color: #fff;
@@ -466,6 +478,21 @@ section.table:after {
     vertical-align: top; }
   .form tr:nth-child(2n) > td {
     background-color: #fff; }
+
+.detail {
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 0 20px; }
+
+.type1 tbody tr td:nth-child(4), .type1 tbody tr td:nth-child(5) {
+  text-align: left; }
+
+.type2 tbody tr td:nth-child(2) {
+  text-align: left;
+  width: 200px; }
+.type2 tbody tr td:nth-child(3) {
+  text-align: right;
+  width: 140px; }
 
 /* ==========================================================================
    Helper classes

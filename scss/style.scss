@@ -29,7 +29,9 @@ $blue: #2d5d7b;
 $bgTD: #eff3fc;
 $font_th: 'TH Chakra Petch';
 
-a { color: $blue; text-decoration: none; }
+a { color: $blue; text-decoration: none; @include transition(color .25s ease-out); 
+  [class^="icon-"]:before, [class*=" icon-"]:before { font-size: 1.6em; }
+}
 a:hover { text-decoration: underline; }
 
 body, html { width: 100%; height: 100%; @extend .light-on-dark; font-family: Tahoma; font-size: 14px; line-height: 1.5;}
@@ -82,14 +84,16 @@ footer { position: relative; top: -70px; padding: 0 1px;
 }
 section.table { margin-bottom: 80px; }
 section.table:after { content:'';  height: 1px; position: absolute; box-shadow: 0 0 5px 3px rgba(0,0,0,.5);top:auto; bottom: 2px; left: 6px; right: 6px;  }
-.table { 
+.table {
   table { width: 100%; border-collapse: collapse; color: #0d2a47; font-size: 12px; position: relative; z-index: 2; }
   th { background-color: #9ce9b9; font-weight: normal; }
   th, td { padding: 3px 5px; text-align: center; border-right: solid 1px #2f5f7c; }
   tbody tr {
     td:nth-child(4), td:nth-child(5) { text-align: left; }
     td { background-color: $bgTD; }
-    a { color: #0d2a47; }
+    a { color: #0d2a47;
+      &:hover { color: lighten($blue, 10%);}
+    }
   }
   tr>th:last-child, tr>td:last-child { border-right: none; }
   tbody tr:nth-child(2n) td { background-color: #fff; }

@@ -373,6 +373,9 @@ footer {
       top: -1px;
       margin-left: 8px; }
 
+table {
+  width: 100%; }
+
 section.table {
   margin-bottom: 80px; }
 
@@ -401,7 +404,8 @@ section.table:after {
   text-align: center;
   border-right: solid 1px #2f5f7c; }
 .table tbody tr td {
-  background-color: #eff3fc; }
+  background-color: #eff3fc;
+  vertical-align: top; }
 .table tbody tr a {
   color: #0d2a47; }
   .table tbody tr a:hover {
@@ -484,15 +488,111 @@ section.table:after {
   line-height: 1.5;
   padding: 0 20px; }
 
+table.number tbody > tr {
+  counter-increment: row-count; }
+table.number tbody tr > td:first-child {
+  white-space: nowrap; }
+table.number tbody tr > td:first-child:before {
+  display: inline-block;
+  width: 22px;
+  padding-right: 5px;
+  content: counter(row-count) ".";
+  text-align: right; }
+
 .type1 tbody tr td:nth-child(4), .type1 tbody tr td:nth-child(5) {
   text-align: left; }
 
-.type2 tbody tr td:nth-child(2) {
+.type2 {
+  margin-bottom: 30px !important; }
+  .type2 tbody tr td:nth-child(2) {
+    text-align: left;
+    width: 200px; }
+  .type2 tbody tr td:nth-child(3) {
+    text-align: right;
+    width: 140px; }
+
+.type3 tbody tr td:nth-child(1) {
   text-align: left;
   width: 200px; }
-.type2 tbody tr td:nth-child(3) {
-  text-align: right;
-  width: 140px; }
+.type3 tbody tr td:nth-child(2) {
+  width: 120px; }
+.type3 tbody tr td:nth-child(3) {
+  text-align: left;
+  padding: 3px 10px; }
+
+.tabs {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0; }
+  .tabs:after {
+    content: '';
+    height: 1px;
+    position: absolute;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.65);
+    top: auto;
+    bottom: 1px;
+    left: 8px;
+    right: 8px;
+    z-index: -1; }
+  .tabs .detail {
+    margin-bottom: 20px;
+    padding: 0 60px; }
+    .tabs .detail table {
+      margin: 25px 0; }
+      .tabs .detail table label {
+        width: 80px;
+        display: inline-block; }
+    .tabs .detail p label {
+      width: 160px;
+      display: inline-block; }
+  .tabs > div {
+    background: #fff;
+    border: solid 1px transparent;
+    border-right-color: #a1a1a1;
+    border-left-color: #d0dad0; }
+  .tabs p.right {
+    text-align: right;
+    font-size: 12px;
+    padding: 10px 20px; }
+  .tabs dt {
+    font-size: 12px;
+    color: #2d5d7b;
+    background-color: #9ce9b9;
+    padding: 8px 25px;
+    border-bottom: solid 1px #41624e; }
+  .tabs dd {
+    margin: 0;
+    padding-top: 0; }
+  .tabs .table {
+    margin: 0 10px; }
+  .tabs .ui-tabs-panel {
+    position: relative;
+    z-index: 2;
+    min-height: 100px; }
+  .tabs .ui-tabs-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .tabs .ui-tabs-nav li {
+      display: block;
+      float: left; }
+      .tabs .ui-tabs-nav li.ui-state-active a {
+        background-color: #fff;
+        border-color: #d0dad0;
+        top: 2px;
+        line-height: 29px; }
+    .tabs .ui-tabs-nav a {
+      display: inline-block;
+      padding: 0 13px 0 14px;
+      background-color: #ccc;
+      font-size: 12px;
+      border-radius: 5px 5px 0 0;
+      border: solid 1px #9aa69a;
+      border-bottom: none;
+      position: relative;
+      height: 29px;
+      top: 7px;
+      text-decoration: none; }
 
 /* ==========================================================================
    Helper classes
@@ -563,22 +663,23 @@ section.table:after {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before, main:before,
+.clearfix:before, main:before, .tabs .ui-tabs-nav:before,
 .clearfix:after,
-main:after {
+main:after,
+.tabs .ui-tabs-nav:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after, main:after {
+.clearfix:after, main:after, .tabs .ui-tabs-nav:after {
   clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.clearfix, main {
+.clearfix, main, .tabs .ui-tabs-nav {
   *zoom: 1; }
 
 /* ==========================================================================

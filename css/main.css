@@ -520,6 +520,15 @@ table.number tbody tr > td:first-child:before {
   text-align: left;
   padding: 3px 10px; }
 
+.type4 {
+  margin-bottom: 50px; }
+  .type4 tbody tr td:nth-child(1) {
+    text-align: left;
+    padding: 20px 20px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    border-top: none; }
+
 .tabs {
   position: relative;
   z-index: 2;
@@ -542,6 +551,32 @@ table.number tbody tr > td:first-child:before {
       .tabs .detail table label {
         width: 80px;
         display: inline-block; }
+      .tabs .detail table td {
+        vertical-align: top; }
+      .tabs .detail table td.right {
+        text-align: right; }
+    .tabs .detail .process {
+      margin: 10px 0 60px; }
+      .tabs .detail .process tr > td:nth-child(1) {
+        width: 110px;
+        padding-right: 20px;
+        white-space: nowrap; }
+      .tabs .detail .process textarea {
+        border: solid 1px #333;
+        width: 100%;
+        padding: 5px 10px;
+        font-family: Tahoma;
+        font-size: 13px;
+        height: 100px;
+        margin-bottom: 20px;
+        resize: none; }
+      .tabs .detail .process input {
+        background-color: #c9c9c9;
+        border: solid 1px transparent;
+        border-bottom-color: #545454;
+        border-right-color: #8c8c8c;
+        padding: 0 25px;
+        margin-right: 5px; }
     .tabs .detail p label {
       width: 160px;
       display: inline-block; }
@@ -593,6 +628,20 @@ table.number tbody tr > td:first-child:before {
       height: 29px;
       top: 7px;
       text-decoration: none; }
+  .tabs h4 {
+    background-color: #8ac1f0;
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 0;
+    height: 22px;
+    font-weight: normal;
+    padding: 0 10px;
+    border: solid 1px;
+    border-top-color: #b5d8f5;
+    border-right-color: #73a0c8;
+    border-bottom-color: #6a94b8;
+    border-left-color: #bcddf9;
+    margin-left: 20px; }
 
 /* ==========================================================================
    Helper classes

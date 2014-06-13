@@ -148,12 +148,26 @@ table.number {
     td:nth-child(3) { text-align: left; padding: 3px 10px;}
   }
 }
+.type4 { margin-bottom: 50px;
+  tbody tr {
+    td:nth-child(1) { text-align: left; padding: 20px 20px; background-color: #fff; border: solid 1px #ccc; border-top: none;  }
+  }
+}
 
 .tabs { position: relative; z-index: 2; margin-bottom: 0;
   &:after { content:'';  height: 1px; position: absolute; box-shadow: 0 0 5px 5px rgba(0,0,0,.65);top:auto; bottom: 1px; left: 8px; right: 8px; z-index: -1; }
   .detail { margin-bottom: 20px; padding: 0 60px;
     table { margin: 25px 0;
       label { width: 80px; display: inline-block; }
+      td { vertical-align: top; }
+      td.right { text-align: right; }
+    }
+    .process { margin: 10px 0 60px;
+      tr {
+        >td:nth-child(1) { width: 110px; padding-right: 20px; white-space: nowrap; }
+      }
+      textarea { border: solid 1px #333; width: 100%; padding: 5px 10px; font-family: Tahoma; font-size: 13px; height: 100px; margin-bottom: 20px; resize: none; }
+      input { background-color: #c9c9c9; border: solid 1px transparent; border-bottom-color: #545454; border-right-color: #8c8c8c; padding: 0 25px; margin-right: 5px; }
     }
     p label { width: 160px; display:inline-block; }
   }
@@ -171,4 +185,5 @@ table.number {
     }
     a {  display: inline-block; padding: 0 13px 0 14px; background-color: #ccc; font-size: 12px; border-radius: 5px 5px 0 0; border: solid 1px #9aa69a; border-bottom: none; position: relative; height: 29px; top: 7px; text-decoration: none;  }
   }
+  h4 { background-color: #8ac1f0; display: inline-block; font-size: 12px; margin-bottom: 0; height: 22px; font-weight: normal; padding: 0 10px; border: solid 1px; border-top-color: #b5d8f5; border-right-color: #73a0c8; border-bottom-color: #6a94b8; border-left-color: #bcddf9; margin-left: 20px;}
 }

@@ -2254,6 +2254,50 @@ a.button {
     a.button:hover i {
       top: 3px; }
 
+#login section {
+  width: 340px;
+  margin: 0 auto;
+  position: relative; }
+#login div {
+  background-color: #fff7ec;
+  z-index: 3;
+  padding: 20px 40px;
+  position: relative;
+  border-radius: 5px;
+  border: solid 1px transparent;
+  border-right-color: #a19c95;
+  border-bottom-color: #6b6863; }
+#login section:after {
+  content: '';
+  height: 1px;
+  position: absolute;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+  top: auto;
+  bottom: 2px;
+  left: 6px;
+  right: 6px;
+  z-index: 1; }
+#login h2 {
+  text-align: center;
+  font-family: "TH Chakra Petch";
+  color: #744400;
+  margin: 0;
+  font-size: 24px; }
+#login label {
+  font-size: 12px;
+  display: inline-block;
+  width: 70px;
+  margin-right: 15px;
+  background: url("../img/bullet-breadcumb.png") right center no-repeat; }
+#login p:nth-child(2) input, #login p:nth-child(3) input {
+  border: solid 1px #333; }
+#login p:nth-child(4) {
+  text-align: center;
+  margin-top: 30px; }
+
+#login:after {
+  z-index: -1; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

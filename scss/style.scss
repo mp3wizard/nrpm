@@ -26,6 +26,7 @@
 
 $white: #f2f2f2;
 $blue: #2d5d7b;
+$brown: #744400;
 $bgTD: #eff3fc;
 $font_th: 'TH Chakra Petch';
 
@@ -209,3 +210,17 @@ a.button { font-size: 13px; background-color: #2ecc71; padding: 0 10px; line-hei
     i { top: 3px; }
   }
 }
+
+// Login Page
+#login {
+  section { width: 340px;  margin: 0 auto; position: relative;}
+  div { background-color: #fff7ec; z-index: 3;  padding: 20px 40px; position: relative; border-radius: 5px; border: solid 1px transparent; border-right-color: #a19c95; border-bottom-color: #6b6863;}
+  section:after { content:'';  height: 1px; position: absolute; box-shadow: 0 0 5px 3px rgba(0,0,0,.5);top:auto; bottom: 2px; left: 6px; right: 6px; z-index: 1; }
+  h2 {  text-align: center;font-family: $font_th; color: $brown; margin: 0; font-size: 24px; }
+  label { font-size: 12px; display: inline-block; width: 70px; margin-right: 15px; background: url('../img/bullet-breadcumb.png') right center no-repeat; }
+  p:nth-child(2), p:nth-child(3) {
+    input { border: solid 1px #333; }
+  }
+  p:nth-child(4) { text-align: center; margin-top: 30px; }
+}
+#login:after { z-index: -1; }

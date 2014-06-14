@@ -1889,8 +1889,17 @@ article div.text {
   border-radius: 5px;
   min-height: 220px;
   padding: 20px; }
+  article div.text p.right {
+    text-align: right; }
 article > div.text:nth-child(2) {
   margin: 0 15px; }
+article h2 {
+  text-align: center;
+  font-family: "TH Chakra Petch";
+  font-size: 30px;
+  margin-top: 0;
+  color: #744400;
+  margin-bottom: 0; }
 article h3 {
   text-align: center;
   font-family: "TH Chakra Petch";
@@ -1913,7 +1922,8 @@ footer {
   color: #734400;
   font-size: 26px;
   margin-top: 0;
-  line-height: 1.1; }
+  line-height: 1.1;
+  text-align: left; }
   .breadcumb a {
     color: #734400; }
     .breadcumb a:after {
@@ -2217,9 +2227,10 @@ input.button {
   border: solid 1px transparent;
   border-bottom-color: #545454;
   border-right-color: #8c8c8c;
-  padding: 0 15px;
+  padding: 0 20px;
   margin-left: 10px;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 12px; }
 
 a .fa-trash-o {
   color: #c0392b; }
@@ -2254,49 +2265,156 @@ a.button {
     a.button:hover i {
       top: 3px; }
 
-#login section {
-  width: 340px;
-  margin: 0 auto;
-  position: relative; }
-#login div {
-  background-color: #fff7ec;
-  z-index: 3;
-  padding: 20px 40px;
-  position: relative;
-  border-radius: 5px;
-  border: solid 1px transparent;
-  border-right-color: #a19c95;
-  border-bottom-color: #6b6863; }
-#login section:after {
-  content: '';
-  height: 1px;
-  position: absolute;
-  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
-  top: auto;
-  bottom: 2px;
-  left: 6px;
-  right: 6px;
-  z-index: 1; }
-#login h2 {
-  text-align: center;
-  font-family: "TH Chakra Petch";
-  color: #744400;
-  margin: 0;
-  font-size: 24px; }
-#login label {
-  font-size: 12px;
-  display: inline-block;
-  width: 70px;
-  margin-right: 15px;
-  background: url("../img/bullet-breadcumb.png") right center no-repeat; }
-#login p:nth-child(2) input, #login p:nth-child(3) input {
-  border: solid 1px #333; }
-#login p:nth-child(4) {
-  text-align: center;
-  margin-top: 30px; }
+#login {
+  margin-bottom: 50px; }
+  #login section {
+    width: 340px;
+    margin: 0 auto;
+    position: relative; }
+  #login div {
+    background-color: #fff7ec;
+    z-index: 3;
+    padding: 20px 40px;
+    position: relative;
+    border-radius: 5px;
+    border: solid 1px transparent;
+    border-right-color: #a19c95;
+    border-bottom-color: #6b6863; }
+  #login section:after {
+    content: '';
+    height: 1px;
+    position: absolute;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+    top: auto;
+    bottom: 2px;
+    left: 6px;
+    right: 6px;
+    z-index: 1; }
+  #login h2 {
+    text-align: center;
+    font-family: "TH Chakra Petch";
+    color: #744400;
+    margin: 0;
+    font-size: 26px; }
+  #login label {
+    font-size: 12px;
+    display: inline-block;
+    width: 70px;
+    margin-right: 15px;
+    background: url("../img/bullet-breadcumb.png") right center no-repeat; }
+  #login p:nth-child(2) input, #login p:nth-child(3) input {
+    border: solid 1px #333; }
+  #login p:nth-child(4) {
+    text-align: center;
+    margin-top: 30px; }
 
 #login:after {
   z-index: -1; }
+
+p.center {
+  text-align: center; }
+
+.register section h3 {
+  font-size: 14px;
+  font-family: tahoma;
+  color: #2d5d7b;
+  background-color: #9ce9b9;
+  padding: 8px 25px;
+  border-bottom: solid 1px #41624e;
+  font-weight: normal;
+  text-align: left; }
+.register section p {
+  text-align: left;
+  padding: 0; }
+  .register section p label {
+    float: left; }
+  .register section p label:first-child {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 18.96686%; }
+    .register section p label:first-child:last-child {
+      margin-right: 0; }
+  .register section p label.auto {
+    width: auto; }
+  .register section p label:nth-child(3) {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .register section p label:nth-child(3):last-child {
+      margin-right: 0; }
+  .register section p input {
+    border: solid 1px #ccc;
+    height: 24px;
+    padding: 0 5px; }
+  .register section p input, .register section p select {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 27.49666%; }
+    .register section p input:last-child, .register section p select:last-child {
+      margin-right: 0; }
+.register section #birthdate, .register section #monthdate, .register section #yeardate {
+  width: auto;
+  margin-right: 10px; }
+.register section #male, .register section #female, .register section #goverment, .register section #private {
+  position: relative;
+  width: auto;
+  margin-right: 10px; }
+  .register section #male ~ label, .register section #female ~ label, .register section #goverment ~ label, .register section #private ~ label {
+    text-align: left;
+    width: 50px;
+    line-height: 24px; }
+    .register section #male ~ label:after, .register section #female ~ label:after, .register section #goverment ~ label:after, .register section #private ~ label:after {
+      display: none; }
+.register section #floor {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%; }
+  .register section #floor:last-child {
+    margin-right: 0; }
+.register section #specific {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  .register section #specific:last-child {
+    margin-right: 0; }
+.register section #publish1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 62.46886%; }
+  .register section #publish1:last-child {
+    margin-right: 0; }
+.register section #publish4, .register section #publish7 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+  .register section #publish4:last-child, .register section #publish7:last-child {
+    margin-right: 0; }
+.register p {
+  padding: 0 30px;
+  text-align: right; }
+  .register p label {
+    font-size: 12px;
+    display: inline-block;
+    text-align: right;
+    white-space: nowrap;
+    line-height: 22px; }
+    .register p label:after {
+      content: ':';
+      margin: 0 5px; }
+    .register p label em {
+      font-size: 10px;
+      font-style: normal; }
+.register #publish_list th {
+  font-size: 11px; }
+.register #publish_list a {
+  padding: 0 3px; }
 
 /* ==========================================================================
    Helper classes
@@ -2367,23 +2485,24 @@ a.button {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before, main:before, .tabs .ui-tabs-nav:before,
+.clearfix:before, main:before, .tabs .ui-tabs-nav:before, .register p:before,
 .clearfix:after,
 main:after,
-.tabs .ui-tabs-nav:after {
+.tabs .ui-tabs-nav:after,
+.register p:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after, main:after, .tabs .ui-tabs-nav:after {
+.clearfix:after, main:after, .tabs .ui-tabs-nav:after, .register p:after {
   clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.clearfix, main, .tabs .ui-tabs-nav {
+.clearfix, main, .tabs .ui-tabs-nav, .register p {
   *zoom: 1; }
 
 /* ==========================================================================

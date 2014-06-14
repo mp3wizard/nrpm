@@ -68,8 +68,11 @@ aside { border-radius: 10px;  border-right: solid 1px #a19c95; border-bottom: so
   ul { list-style: none; padding: 0; margin: 0; }
 }
 article {
-  div.text { background-color: #fff; border-radius: 5px;  min-height: 220px; padding: 20px; }
+  div.text { background-color: #fff; border-radius: 5px;  min-height: 220px; padding: 20px; 
+    p.right { text-align: right; }
+  }
   >div.text:nth-child(2) { margin: 0 15px; }
+  h2 { text-align: center; font-family: $font_th; font-size: 30px; margin-top: 0; color: $brown; margin-bottom: 0; }
   h3 { text-align: center; font-family: $font_th; font-size: 24px; margin-top: 0; }
   section { margin-bottom: 40px; position: relative; }
 }
@@ -78,7 +81,7 @@ footer { position: relative; top: -70px; padding: 0 1px;
   img { width: 100%; }
 }
 
-.breadcumb { border-bottom: solid 2px #2d5e7b; font-family: $font_th; color: #734400; font-size: 26px; margin-top: 0; line-height: 1.1;
+.breadcumb { border-bottom: solid 2px #2d5e7b; font-family: $font_th; color: #734400; font-size: 26px; margin-top: 0; line-height: 1.1; text-align: left;
   a { color: #734400;
     &:after { content:''; display: inline-block; @include size(7px 9px); background: url("../img/bullet-breadcumb.png") no-repeat; position: relative; top: -1px; margin-left: 8px; }
   }
@@ -198,7 +201,7 @@ table.number {
   h4 { background-color: #8ac1f0; display: inline-block; font-size: 12px; margin-bottom: 0; height: 22px; font-weight: normal; padding: 0 10px; border: solid 1px; border-top-color: #b5d8f5; border-right-color: #73a0c8; border-bottom-color: #6a94b8; border-left-color: #bcddf9; margin-left: 20px;}
 }
 p.indent { text-indent: 30px; }
-input.button { background-color: #c9c9c9; border: solid 1px transparent; border-bottom-color: #545454; border-right-color: #8c8c8c; padding: 0 15px; margin-left: 10px; cursor: pointer; }
+input.button { background-color: #c9c9c9; border: solid 1px transparent; border-bottom-color: #545454; border-right-color: #8c8c8c; padding: 0 20px; margin-left: 10px; cursor: pointer; font-size: 12px; }
 // icon color
 a {
   .fa-trash-o { color: #c0392b;}
@@ -212,11 +215,11 @@ a.button { font-size: 13px; background-color: #2ecc71; padding: 0 10px; line-hei
 }
 
 // Login Page
-#login {
+#login { margin-bottom: 50px;
   section { width: 340px;  margin: 0 auto; position: relative;}
   div { background-color: #fff7ec; z-index: 3;  padding: 20px 40px; position: relative; border-radius: 5px; border: solid 1px transparent; border-right-color: #a19c95; border-bottom-color: #6b6863;}
   section:after { content:'';  height: 1px; position: absolute; box-shadow: 0 0 5px 3px rgba(0,0,0,.5);top:auto; bottom: 2px; left: 6px; right: 6px; z-index: 1; }
-  h2 {  text-align: center;font-family: $font_th; color: $brown; margin: 0; font-size: 24px; }
+  h2 {  text-align: center;font-family: $font_th; color: $brown; margin: 0; font-size: 26px; }
   label { font-size: 12px; display: inline-block; width: 70px; margin-right: 15px; background: url('../img/bullet-breadcumb.png') right center no-repeat; }
   p:nth-child(2), p:nth-child(3) {
     input { border: solid 1px #333; }
@@ -224,3 +227,39 @@ a.button { font-size: 13px; background-color: #2ecc71; padding: 0 10px; line-hei
   p:nth-child(4) { text-align: center; margin-top: 30px; }
 }
 #login:after { z-index: -1; }
+
+p.center { text-align: center; }
+
+.register {
+  section {
+    h3 { font-size: 14px; font-family: tahoma; color: $blue; background-color: #9ce9b9; padding: 8px 25px; border-bottom: solid 1px #41624e; font-weight: normal; text-align: left; }
+    p { text-align: left; padding: 0;
+      label {float:left; }
+      label:first-child { @include span-columns(2.5);}
+      label.auto { width: auto; }
+      label:nth-child(3) { @include span-columns(2); }
+      input { border: solid 1px #ccc; height: 24px; padding: 0 5px; }
+      input, select { @include span-columns(3.5); }
+    }
+    #birthdate, #monthdate, #yeardate { width: auto; margin-right: 10px; }
+    #male, #female, #goverment, #private { position: relative; width: auto; margin-right: 10px;
+      ~ label { text-align: left; width: 50px; line-height: 24px;
+        &:after { display: none; }
+      }
+    }
+    #floor { @include span-columns(1);  }
+    #specific { @include span-columns(2); }
+    #publish1 { @include span-columns(7.6); }
+    #publish4, #publish7 { @include span-columns(9); }
+  }
+  p { padding: 0 30px; @extend .clearfix; text-align: right;
+    label { font-size: 12px; display: inline-block; text-align: right; white-space: nowrap; line-height: 22px;
+      &:after { content:':'; margin: 0 5px; }
+      em { font-size: 10px; font-style: normal; }
+    }
+  }
+  #publish_list {
+    th { font-size: 11px; }
+    a { padding: 0 3px; }
+  }
+}

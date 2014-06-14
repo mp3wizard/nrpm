@@ -1,0 +1,145 @@
+<!-- @import "_head.kit" -->
+    <!-- @import "_header.kit" -->
+
+        <main role="main">
+            <aside>
+                <!-- @import "_nav_menu5.kit" -->
+            </aside>
+
+            <article class="register">
+                <h2>สมัครสมาชิก</h2>
+                <section>
+                    <h3>ประวัติการศึกษา</h3>
+                    <p>
+                        <label for="edu1">สาขาวิชา</label>
+                        <input type="text" name="edu1" id="edu1">
+                        <label for="edu2">คณะ</label>
+                        <input type="text" name="edu2" id="edu2">
+                    </p>
+                    <p>
+                        <label for="edu3">มหาวิทยาลัย</label>
+                        <input type="text" name="edu3" id="edu3">
+                    </p>
+                    <p>
+                        <label for="edu4">ระดับการศึกษา</label>
+                        <input type="text" name="edu4" id="edu4">
+                        <label for="edu5">วุฒิการศึกษา</label>
+                        <input type="text" name="edu5" id="edu5">
+                    </p>
+                    <p>
+                        <label for="edu6">ปีจบการศึกษา</label>
+                        <input type="text" name="edu6" id="edu6">
+                    </p>
+                    <p>
+                        <label for="edu7">ประเทศ</label>
+                        <input type="text" name="edu7" id="edu7">
+                        <label for="edu8">สังกัดมหาวิทยาลัย</label>
+                        <input type="radio" name="edu8" id="goverment"> <label for="goverment">รัฐบาล</label>
+                        <input type="radio" name="edu8" id="private"> <label for="private">เอกชน</label>
+                    </p>
+                </section>
+
+                <p>
+                    <input type="submit" value="บันทึก" class="button">
+                    <input type="reset" value="ยกเลิก" class="button">
+                </p>
+                <section class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>เลือก</th>
+                                <th>ระดับการศึกษา</th>
+                                <th>วุฒิการศึกษา</th>
+                                <th>สาขา</th>
+                                <th>คณะ</th>
+                                <th>มหาวิทยาลัย</th>
+                                <th>ปีจบการศึกษา</th>
+                                <th>ประเทศ</th>
+                                <th>ลบ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" name="edu_list1" id="edu_list1"></td>
+                                <td>ปริญญาตรี</td>
+                                <td>xxxxx</td>
+                                <td>xxx</td>
+                                <td>วิทยาศาสตร์</td>
+                                <td>มรภ. สวนสุนันทา</td>
+                                <td>2535</td>
+                                <td>ไทย</td>
+                                <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h3>ประวัติผลงานที่ตีพิมพ์</h3>
+                    <p>
+                        <label for="publish1" class="auto">ชื่องานวิจัย/งานสร้างสรรค์ที่ตีพิมพ์เผยแพร่</label>
+                        <input type="text" name="publish1" id="publish1">
+                    </p>
+                    <p>
+                        <label for="publish2">ประเภทชิ้นงาน</label>
+                        <select name="publish2" id="publish2">
+                            <option value=""></option>
+                        </select>
+                        <label for="publish3">ระดับการตีพิมพ์</label>
+                        <select name="publish3" id="publish3">
+                            <option value=""></option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="publish4">ชื่อวารสารที่ตีพิมพ์ </label>
+                        <input type="text" name="publish4" id="publish4">
+                    </p>
+                    <p>
+                        <label for="publish5">วันที่เริ่มตีพิมพ์</label>
+                        <input type="text" name="publish5" id="publish5" placeholder="วัน/เดือน/ปี">
+                        <label for="publish6">วันที่ตีพิมพ์ถึง</label>
+                        <input type="text" name="publish6" id="publish6" placeholder="วัน/เดือน/ปี">
+                    </p>
+                    <p>
+                        <label for="publish7">หน่วยงานที่สังกัด/คณะ</label>
+                        <input type="text" name="publish7" id="publish7">
+                    </p>
+                </section>
+                <p>
+                    <input type="submit" value="บันทึก" class="button">
+                    <input type="reset" value="ยกเลิก" class="button">
+                </p>
+
+                <section class="table">
+                    <table id="publish_list">
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>ชื่องานวิจัยฯ</th>
+                                <th>ประเภทชิ้นงาน</th>
+                                <th>ระดับการตีพิมพ์</th>
+                                <th>ชื่อวารสารที่ตีพิมพ์</th>
+                                <th>วันที่เริ่มตีพิมพ์</th>
+                                <th>วันที่ตีพิมพ์ถึง</th>
+                                <th>หน่วยงานที่สังกัด</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>xxxxxxx</td>
+                                <td>วิจัย</td>
+                                <td>นานาชาติ</td>
+                                <td>xxxxxxxxxxxx</td>
+                                <td>dd/mm/yy</td>
+                                <td>dd/mm/yy</td>
+                                <td>xxxxxxxxxx</td>
+                                <td><a href="#"><i class="fa fa-pencil"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+        </main>
+        <!-- @import "_footer.kit" -->

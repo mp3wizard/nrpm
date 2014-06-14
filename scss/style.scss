@@ -81,7 +81,7 @@ footer { position: relative; top: -70px; padding: 0 1px;
   img { width: 100%; }
 }
 
-.breadcumb { border-bottom: solid 2px #2d5e7b; font-family: $font_th; color: #734400; font-size: 26px; margin-top: 0; line-height: 1.1; text-align: left;
+.breadcumb { border-bottom: solid 2px #2d5e7b; font-family: $font_th; color: #734400; font-size: 26px; margin-top: 0; line-height: 1.1; text-align: left; margin-bottom: 30px;
   a { color: #734400;
     &:after { content:''; display: inline-block; @include size(7px 9px); background: url("../img/bullet-breadcumb.png") no-repeat; position: relative; top: -1px; margin-left: 8px; }
   }

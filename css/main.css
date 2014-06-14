@@ -1923,7 +1923,8 @@ footer {
   font-size: 26px;
   margin-top: 0;
   line-height: 1.1;
-  text-align: left; }
+  text-align: left;
+  margin-bottom: 30px; }
   .breadcumb a {
     color: #734400; }
     .breadcumb a:after {

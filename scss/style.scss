@@ -173,6 +173,12 @@ table.number {
     a { padding: 0 5px; font-size: 1.3em; }
   }
 }
+.type7 {
+  tbody tr {
+    td:nth-child(2) { text-align: left; width: 240px; }
+    a { padding: 0 5px; font-size: 1.3em; }
+  }
+}
 
 .tabs { position: relative; z-index: 2; margin-bottom: 0;
   &:after { content:'';  height: 1px; position: absolute; box-shadow: 0 0 5px 5px rgba(0,0,0,.65);top:auto; bottom: 1px; left: 8px; right: 8px; z-index: -1; }
@@ -208,7 +214,7 @@ table.number {
   h4 { background-color: #8ac1f0; display: inline-block; font-size: 12px; margin-bottom: 0; height: 22px; font-weight: normal; padding: 0 10px; border: solid 1px; border-top-color: #b5d8f5; border-right-color: #73a0c8; border-bottom-color: #6a94b8; border-left-color: #bcddf9; margin-left: 20px;}
 }
 p.indent { text-indent: 30px; }
-input.button { background-color: #c9c9c9; border: solid 1px transparent; border-bottom-color: #545454; border-right-color: #8c8c8c; padding: 0 20px; margin-left: 10px; cursor: pointer; font-size: 12px; }
+input.button, button { background-color: #c9c9c9; border: solid 1px transparent; border-bottom-color: #545454; border-right-color: #8c8c8c; padding: 0 20px; margin-left: 10px; cursor: pointer; font-size: 12px; height: 23px; }
 // icon color
 a { 
   .fa-trash-o { color: #c0392b;}
@@ -286,7 +292,7 @@ p.center { text-align: center; }
       label:nth-child(3) { @include span-columns(2); }
       input, textarea { border: solid 1px #ccc; height: 24px; padding: 0 5px; }
       textarea { padding: 5px 10px; height: 100px; @include span-columns(8); resize: none;}
-      input { @include span-columns(2); }
+      input, select { @include span-columns(2); }
     }
     ul { list-style: none; margin: 0; padding: 0 25px;
       li { @extend .clearfix; margin-bottom: 10px; }
@@ -307,4 +313,14 @@ p.center { text-align: center; }
     }
   }
   #project_ongoing  { clear: left; margin-left: 26.5%; }
+  h3.orange { background-color: #ffcd8c; }
+  p.right { text-align: right;
+    input { float: none; display: inline-block; }
+  }
+}
+#tab2.send_agreement {
+  #search_responsible { @include span-columns(5); float: none; display: inline-block; }
+  section p { 
+    input, select { @include span-columns(3); }
+  }
 }

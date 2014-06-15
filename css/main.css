@@ -2115,6 +2115,13 @@ table.number tbody tr > td:first-child:before {
   padding: 0 5px;
   font-size: 1.3em; }
 
+.type7 tbody tr td:nth-child(2) {
+  text-align: left;
+  width: 240px; }
+.type7 tbody tr a {
+  padding: 0 5px;
+  font-size: 1.3em; }
+
 .tabs {
   position: relative;
   z-index: 2;
@@ -2232,7 +2239,7 @@ table.number tbody tr > td:first-child:before {
 p.indent {
   text-indent: 30px; }
 
-input.button {
+input.button, button {
   background-color: #c9c9c9;
   border: solid 1px transparent;
   border-bottom-color: #545454;
@@ -2240,7 +2247,8 @@ input.button {
   padding: 0 20px;
   margin-left: 10px;
   cursor: pointer;
-  font-size: 12px; }
+  font-size: 12px;
+  height: 23px; }
 
 a .fa-trash-o {
   color: #c0392b; }
@@ -2491,12 +2499,12 @@ p.center {
       resize: none; }
       .send_agreement section p textarea:last-child {
         margin-right: 0; }
-    .send_agreement section p input {
+    .send_agreement section p input, .send_agreement section p select {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 14.70196%; }
-      .send_agreement section p input:last-child {
+      .send_agreement section p input:last-child, .send_agreement section p select:last-child {
         margin-right: 0; }
   .send_agreement section ul {
     list-style: none;
@@ -2549,6 +2557,30 @@ p.center {
   .send_agreement #project_ongoing {
     clear: left;
     margin-left: 26.5%; }
+  .send_agreement h3.orange {
+    background-color: #ffcd8c; }
+  .send_agreement p.right {
+    text-align: right; }
+    .send_agreement p.right input {
+      float: none;
+      display: inline-block; }
+
+#tab2.send_agreement #search_responsible {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  float: none;
+  display: inline-block; }
+  #tab2.send_agreement #search_responsible:last-child {
+    margin-right: 0; }
+#tab2.send_agreement section p input, #tab2.send_agreement section p select {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  #tab2.send_agreement section p input:last-child, #tab2.send_agreement section p select:last-child {
+    margin-right: 0; }
 
 /* ==========================================================================
    Helper classes

@@ -157,7 +157,7 @@ table.number {
     td:nth-child(1) { text-align: left; padding: 20px 20px; background-color: #fff; border: solid 1px #ccc; border-top: none;  }
   }
 }
-.type5 {
+.type5 { margin-bottom: 50px;
   tbody tr {
     td { vertical-align: middle; }
     td:nth-child(1), td:nth-child(2) { text-align: left; width: 35%; }
@@ -180,16 +180,13 @@ table.number {
   }
 }
 
-.type8 {
-  thead tr { 
-    th:nth-child(1) { width: 60px; }
-    th:nth-child(2) { width: 240px; }
-  }
+.type8 { margin-bottom: 20px;
   tbody tr {
-    td:nth-child(2) { text-align: left;  }
-    td:nth-child(3) { text-align: right;  }
+    td:nth-child(1) { text-align: left; padding: 20px 20px; background-color: #fff; border: solid 1px #ccc; border-top: none;  }
   }
 }
+
+
 
 .tabs { position: relative; z-index: 2; margin-bottom: 0;
   &:after { content:'';  height: 1px; position: absolute; box-shadow: 0 0 5px 5px rgba(0,0,0,.65);top:auto; bottom: 1px; left: 8px; right: 8px; z-index: -1; }

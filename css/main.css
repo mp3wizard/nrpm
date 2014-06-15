@@ -2093,18 +2093,20 @@ table.number tbody tr > td:first-child:before {
     border: solid 1px #ccc;
     border-top: none; }
 
-.type5 tbody tr td {
-  vertical-align: middle; }
-.type5 tbody tr td:nth-child(1), .type5 tbody tr td:nth-child(2) {
-  text-align: left;
-  width: 35%; }
-.type5 tbody tr td:last-child {
-  white-space: nowrap;
-  text-align: right; }
-.type5 a {
-  font-size: 1.4em;
-  margin-right: 5px;
-  padding: 0 5px; }
+.type5 {
+  margin-bottom: 50px; }
+  .type5 tbody tr td {
+    vertical-align: middle; }
+  .type5 tbody tr td:nth-child(1), .type5 tbody tr td:nth-child(2) {
+    text-align: left;
+    width: 35%; }
+  .type5 tbody tr td:last-child {
+    white-space: nowrap;
+    text-align: right; }
+  .type5 a {
+    font-size: 1.4em;
+    margin-right: 5px;
+    padding: 0 5px; }
 
 .type6 tbody tr td:nth-child(1) {
   width: 50px; }
@@ -2122,14 +2124,14 @@ table.number tbody tr > td:first-child:before {
   padding: 0 5px;
   font-size: 1.3em; }
 
-.type8 thead tr th:nth-child(1) {
-  width: 60px; }
-.type8 thead tr th:nth-child(2) {
-  width: 240px; }
-.type8 tbody tr td:nth-child(2) {
-  text-align: left; }
-.type8 tbody tr td:nth-child(3) {
-  text-align: right; }
+.type8 {
+  margin-bottom: 20px; }
+  .type8 tbody tr td:nth-child(1) {
+    text-align: left;
+    padding: 20px 20px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    border-top: none; }
 
 .tabs {
   position: relative;

@@ -1979,7 +1979,7 @@ section.table:after {
 .table tbody tr:nth-child(2n) td {
   background-color: #fff; }
 .table caption {
-  height: 23px;
+  height: 26px;
   line-height: 22px;
   border-radius: 5px 5px 0 0;
   color: #0d2a47;
@@ -2121,6 +2121,15 @@ table.number tbody tr > td:first-child:before {
 .type7 tbody tr a {
   padding: 0 5px;
   font-size: 1.3em; }
+
+.type8 thead tr th:nth-child(1) {
+  width: 60px; }
+.type8 thead tr th:nth-child(2) {
+  width: 240px; }
+.type8 tbody tr td:nth-child(2) {
+  text-align: left; }
+.type8 tbody tr td:nth-child(3) {
+  text-align: right; }
 
 .tabs {
   position: relative;
@@ -2581,6 +2590,81 @@ p.center {
   width: 23.23176%; }
   #tab2.send_agreement section p input:last-child, #tab2.send_agreement section p select:last-child {
     margin-right: 0; }
+
+#tab3.send_agreement section.checkbox p input:first-child, #tab3.send_agreement section.radio p input:first-child {
+  width: auto; }
+#tab3.send_agreement section.checkbox p input, #tab3.send_agreement section.radio p input {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%; }
+  #tab3.send_agreement section.checkbox p input:last-child, #tab3.send_agreement section.radio p input:last-child {
+    margin-right: 0; }
+#tab3.send_agreement section.checkbox p label:nth-child(2), #tab3.send_agreement section.radio p label:nth-child(2) {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  text-align: left;
+  white-space: normal; }
+  #tab3.send_agreement section.checkbox p label:nth-child(2):last-child, #tab3.send_agreement section.radio p label:nth-child(2):last-child {
+    margin-right: 0; }
+  #tab3.send_agreement section.checkbox p label:nth-child(2):after, #tab3.send_agreement section.radio p label:nth-child(2):after {
+    display: none; }
+#tab3.send_agreement section.checkbox.textarea label:nth-child(2) {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  #tab3.send_agreement section.checkbox.textarea label:nth-child(2):last-child {
+    margin-right: 0; }
+#tab3.send_agreement section.checkbox.textarea textarea {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  #tab3.send_agreement section.checkbox.textarea textarea:last-child {
+    margin-right: 0; }
+#tab3.send_agreement section.radio p label {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  float: none;
+  display: inline-block; }
+  #tab3.send_agreement section.radio p label:last-child {
+    margin-right: 0; }
+  #tab3.send_agreement section.radio p label:after {
+    display: none; }
+#tab3.send_agreement section.radio p label:nth-child(2) {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  #tab3.send_agreement section.radio p label:nth-child(2):last-child {
+    margin-right: 0; }
+#tab3.send_agreement section.radio p label:nth-child(3) {
+  clear: left; }
+#tab3.send_agreement section.radio p input {
+  display: inline-block;
+  float: none;
+  margin-right: 0;
+  width: 35px;
+  margin-bottom: 5px; }
+#tab3.send_agreement section.radio p input:first-child {
+  float: left;
+  margin-right: 2.35765%; }
+#tab3.send_agreement section.radio p label.shift {
+  margin-left: 17%; }
+#tab3.send_agreement section.radio.line input {
+  width: auto;
+  margin-bottom: 0;
+  float: left;
+  margin-right: 2.35765%; }
+  #tab3.send_agreement section.radio.line input ~ label {
+    text-align: left;
+    float: left;
+    line-height: 28px; }
 
 /* ==========================================================================
    Helper classes

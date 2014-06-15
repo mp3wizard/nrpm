@@ -102,7 +102,7 @@ section.table:after { content:'';  height: 1px; position: absolute; box-shadow: 
   tr>th:last-child, tr>td:last-child { border-right: none; }
   tbody tr:nth-child(2n) td { background-color: #fff; }
 
-  caption { height: 23px; line-height: 22px; border-radius: 5px 5px 0 0; color: #0d2a47; font-size: 13px; text-align: left; padding-left: 10px;
+  caption { height: 26px; line-height: 22px; border-radius: 5px 5px 0 0; color: #0d2a47; font-size: 13px; text-align: left; padding-left: 10px;
      background-repeat: repeat-x; border: solid 1px;
     &:before { content:''; @include size(12px 10px); display: inline-block; background: url('../img/bullet-caption.png') no-repeat; margin-right: 5px;  }
     &.blue { background-image: url('../img/bg-caption-blue.png'); background-color: #5e8cc4;
@@ -180,6 +180,17 @@ table.number {
   }
 }
 
+.type8 {
+  thead tr { 
+    th:nth-child(1) { width: 60px; }
+    th:nth-child(2) { width: 240px; }
+  }
+  tbody tr {
+    td:nth-child(2) { text-align: left;  }
+    td:nth-child(3) { text-align: right;  }
+  }
+}
+
 .tabs { position: relative; z-index: 2; margin-bottom: 0;
   &:after { content:'';  height: 1px; position: absolute; box-shadow: 0 0 5px 5px rgba(0,0,0,.65);top:auto; bottom: 1px; left: 8px; right: 8px; z-index: -1; }
   .detail { margin-bottom: 20px; padding: 0 60px;
@@ -216,7 +227,7 @@ table.number {
 p.indent { text-indent: 30px; }
 input.button, button { background-color: #c9c9c9; border: solid 1px transparent; border-bottom-color: #545454; border-right-color: #8c8c8c; padding: 0 20px; margin-left: 10px; cursor: pointer; font-size: 12px; height: 23px; }
 // icon color
-a { 
+a {
   .fa-trash-o { color: #c0392b;}
   .fa-pencil { color: #7f8c8d; }
 }
@@ -320,7 +331,39 @@ p.center { text-align: center; }
 }
 #tab2.send_agreement {
   #search_responsible { @include span-columns(5); float: none; display: inline-block; }
-  section p { 
+  section p {
     input, select { @include span-columns(3); }
+  }
+}
+#tab3.send_agreement {
+  section.checkbox, section.radio {
+    p {
+      input:first-child { width: auto; }
+      input { @include span-columns(1); }
+      label:nth-child(2) { @include span-columns(8); text-align: left; white-space: normal;
+        &:after { display: none; }
+      }
+    }
+  }
+  section.checkbox.textarea {
+    label:nth-child(2)  {@include span-columns(3); }
+    textarea { @include span-columns(8); }
+  }
+  section.radio {
+    p {
+      label { @include span-columns(3); float: none; display: inline-block;
+        &:after { display: none; }
+      }
+      label:nth-child(2)  { @include span-columns(2);}
+      label:nth-child(3) { clear: left; }
+      input { display: inline-block; float: none; margin-right: 0; width: 35px; margin-bottom: 5px; }
+      input:first-child { float: left; margin-right: 2.35765%; }
+      label.shift { margin-left: 17%; }
+    }
+  }
+  section.radio.line { 
+      input { width: auto; margin-bottom: 0; float: left; margin-right: 2.35765%;
+        ~label { text-align: left; float: left; line-height: 28px; } 
+      }
   }
 }

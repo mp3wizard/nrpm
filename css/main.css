@@ -2315,7 +2315,7 @@ a.button {
 p.center {
   text-align: center; }
 
-.register section h3 {
+.register section section h3 {
   font-size: 14px;
   font-family: tahoma;
   color: #2d5d7b;
@@ -2324,78 +2324,78 @@ p.center {
   border-bottom: solid 1px #41624e;
   font-weight: normal;
   text-align: left; }
-.register section p {
+.register section section p {
   text-align: left;
   padding: 0; }
-  .register section p label {
+  .register section section p label {
     float: left; }
-  .register section p label:first-child {
+  .register section section p label:first-child {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 18.96686%; }
-    .register section p label:first-child:last-child {
+    .register section section p label:first-child:last-child {
       margin-right: 0; }
-  .register section p label.auto {
+  .register section section p label.auto {
     width: auto; }
-  .register section p label:nth-child(3) {
+  .register section section p label:nth-child(3) {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 14.70196%; }
-    .register section p label:nth-child(3):last-child {
+    .register section section p label:nth-child(3):last-child {
       margin-right: 0; }
-  .register section p input {
+  .register section section p input {
     border: solid 1px #ccc;
     height: 24px;
     padding: 0 5px; }
-  .register section p input, .register section p select {
+  .register section section p input, .register section section p select {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 27.49666%; }
-    .register section p input:last-child, .register section p select:last-child {
+    .register section section p input:last-child, .register section section p select:last-child {
       margin-right: 0; }
-.register section #birthdate, .register section #monthdate, .register section #yeardate {
+.register section section #birthdate, .register section section #monthdate, .register section section #yeardate {
   width: auto;
   margin-right: 10px; }
-.register section #male, .register section #female, .register section #goverment, .register section #private {
+.register section section #male, .register section section #female, .register section section #goverment, .register section section #private {
   position: relative;
   width: auto;
   margin-right: 10px; }
-  .register section #male ~ label, .register section #female ~ label, .register section #goverment ~ label, .register section #private ~ label {
+  .register section section #male ~ label, .register section section #female ~ label, .register section section #goverment ~ label, .register section section #private ~ label {
     text-align: left;
     width: 50px;
     line-height: 24px; }
-    .register section #male ~ label:after, .register section #female ~ label:after, .register section #goverment ~ label:after, .register section #private ~ label:after {
+    .register section section #male ~ label:after, .register section section #female ~ label:after, .register section section #goverment ~ label:after, .register section section #private ~ label:after {
       display: none; }
-.register section #floor {
+.register section section #floor {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 6.17215%; }
-  .register section #floor:last-child {
+  .register section section #floor:last-child {
     margin-right: 0; }
-.register section #specific {
+.register section section #specific {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 14.70196%; }
-  .register section #specific:last-child {
+  .register section section #specific:last-child {
     margin-right: 0; }
-.register section #publish1 {
+.register section section #publish1 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 62.46886%; }
-  .register section #publish1:last-child {
+  .register section section #publish1:last-child {
     margin-right: 0; }
-.register section #publish4, .register section #publish7 {
+.register section section #publish4, .register section section #publish7 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 74.41059%; }
-  .register section #publish4:last-child, .register section #publish7:last-child {
+  .register section section #publish4:last-child, .register section section #publish7:last-child {
     margin-right: 0; }
 .register p {
   padding: 0 30px;
@@ -2416,6 +2416,19 @@ p.center {
   font-size: 11px; }
 .register #publish_list a {
   padding: 0 3px; }
+.register div.text h3 {
+  text-align: center;
+  font-family: "TH Chakra Petch";
+  font-size: 24px;
+  margin-top: 0;
+  background: transparent;
+  border: none;
+  color: #333;
+  font-weight: bold; }
+.register div.text input {
+  width: auto; }
+.register div.text p {
+  text-align: left; }
 
 /* ==========================================================================
    Helper classes

@@ -64,16 +64,189 @@
                         <li><a href="#tab2">ผู้รับผิดชอบโครงการ</a></li>
                         <li><a href="#tab3">ความสอดคล้อง</a>
                     </ul>
-                    <div id="tab1">
-                        
+                    <div id="tab1" class="send_agreement">
+                        <section>
+                            <h3>รายละเอียดโครงการ</h3>
+                            <p class="detail">
+                                <label for="project_th">ชื่อโครงการ (ภาษาไทย)</label> <input type="text" name="project_th" id="project_th">
+                            </p>
+                            <p class="detail">
+                                <label for="project_en">ชื่อโครงการ (English)</label> <input type="text" name="project_en" id="project_en">
+                            </p>
+                            <p class="detail">
+                                <label for="project_status">สถานะภาพของโครงการ</label>
+                                <input type="radio" name="project_new" id="project_new"> <label for="project_new">โครงการใหม่</label>
+                                <input type="radio" name="project_normal" id="project_normal"> <label for="project_normal">โครงการปรกติ</label> <br>
+                                <input type="radio" name="project_ongoing" id="project_ongoing"> <label for="project_ongoing">โครงการต่อเนื่อง</label>
+                                <label for="project_code">(ระบุระหัสโครงการ)</label> <input type="text" name="project_code" id="project_code">
+                            </p>
+                        </section>
+
+                        <section>
+                            <h3>หลักการและเหตุผล</h3>
+                            <p>
+                                <label for="project_principle">รายละเอียด</label>
+                                <textarea name="project_principle" id="project_principle" cols="30" rows="5"></textarea>
+                            </p>
+                        </section>
+
+                        <section>
+                            <h3>วัตถุประสงค์</h3>
+                            <p>
+                                <label for="project_objective">รายละเอียด</label>
+                                <textarea name="project_objective" id="project_objective" cols="30" rows="5"></textarea>
+                            </p>
+                        </section>
+
+                        <section>
+                            <h3>ตัวชี้วัดความสำเร็จ</h3>
+                            <p>
+                                <label for="project_quantitative">เชิงปริมาณ</label>
+                                <textarea name="project_quantitative" id="project_quantitative" cols="30" rows="5"></textarea>
+                            </p>
+                            <p>
+                                <label for="project_qualitative">เชิงคุณภาพ</label>
+                                <textarea name="project_qualitative" id="project_quantitative" cols="30" rows="5"></textarea>
+                            </p>
+                            <p>
+                                <label for="project_time">เชิงคุณภาพ</label>
+                                <textarea name="project_time" id="project_time" cols="30" rows="5"></textarea>
+                            </p>
+                        </section>
+
+                        <section>
+                            <h3>กลุ่มเป้าหมาย/ผู้เข้าร่วมโครงการ</h3>
+                            <ul class="label2">
+                                <li>
+                                    <label for="target1">ครู/อาจารย์/นักวิชาการ จำนวน</label> <input type="text" name="target1" id="target1"> &nbsp;คน
+                                </li>
+                                <li>
+                                    <label for="target2">บุคลากรในมหาวิทยาลัย จำนวน</label> <input type="text" name="target2" id="target2"> &nbsp;คน
+                                </li>
+                                <li>
+                                    <label for="target3">นักเรียน/นิสิต/นักศึกษา จำนวน</label> <input type="text" name="target3" id="target3"> &nbsp;คน
+                                </li>
+                                <li>
+                                    <label for="target4">ชาวบ้าน/ชุมนุม/สังค จำนวน</label> <input type="text" name="target4" id="target4"> &nbsp;คน
+                                </li>
+                                <li>
+                                    <label for="target5">ศิษย์เก่า จำนวน</label> <input type="text" name="target5" id="target5"> &nbsp;คน
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h3>ระยะเวลาดำเนินโครงการ</h3>
+                            <p>
+                                <label for="project_start">วันที่เริ่มต้น</label> <input type="text" name="project_start" id="project_start">
+                                <label for="project_end">วันที่สิ้นสุด</label> <input type="text" name="project_end" id="project_end">
+                            </p>
+                        </section>
+
+                        <section>
+                            <h3>พืนที่ดำเนินโครงการ</h3>
+                            <p>
+                                <label for="project_location">รายละเอียด</label>
+                                <textarea name="project_location" id="project_location" cols="30" rows="10"></textarea>
+                            </p>
+                        </section>
+
+                        <section>
+                            <h3>งบประมาณ</h3>
+                            <p>
+                                <label for="project_cost">จำนวนเงิน</label>
+                                <input type="text" name="project_cost" id="project_cost"> &nbsp;บาท
+                            </p>
+                        </section>
+
+                        <section>
+                            <h3>ผลที่คาดว่าจะได้รับ</h3>
+                            <p>
+                                <label for="project_expect">รายละเอียด</label>
+                                <textarea name="project_expect" id="project_expect" cols="30" rows="10"></textarea>
+                            </p>
+                        </section>
+
+                        <section>
+                            <h3>การชี้นำสังคม</h3>
+                            <p>
+                                <label for="project_suggestive">รายละเอียด</label>
+                                <textarea name="project_suggestive" id="project_suggestive" cols="30" rows="10"></textarea>
+                            </p>
+                        </section>
+
+                        <section>
+                            <h3>แผนการดำเนินงาน</h3>
+                            <p>
+                                <label for="project_process">ขั้นตอน/กิจกรรม</label>
+                                <input type="text" name="project_process" id="project_process">
+                            </p>
+                            <p>
+                                <label for="project_process_start">วันที่เริ่มต้น</label> <input type="text" name="project_process_start" id="
+                                project_process_start">
+                                <label for="project_process_stop">วันที่สิ้นสุด</label> <input type="text" name="project_process_stop" id="project_process_stop">
+                            </p>
+                        </section>
+                        <p><input type="submit" value="บันทึก" class="button"> <input type="reset" value="ยกเลิก" class="button"></p>
+
+                        <section class="table">
+                            <table class="type6">
+                                <thead>
+                                    <tr>
+                                        <th>ลำดับ</th>
+                                        <th>ขั้นตอน/กิจกรรม</th>
+                                        <th>เริ่มต้น</th>
+                                        <th>สิ้นสุด</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>xxxxxxxxxxxxxxxxxx</td>
+                                        <td>dd/mm/yy</td>
+                                        <td>dd/mm/yy</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-pencil"></i></a>
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>xxxxxxxxxxxxxxxxxx</td>
+                                        <td>dd/mm/yy</td>
+                                        <td>dd/mm/yy</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-pencil"></i></a>
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+
+                         <section>
+                            <h3>สาเหตุหรือปัจจัยความเสี่ยงที่อาจเกิดขึ้นในการดำเนินโครงการ</h3>
+                            <p>
+                                <label for="project_risk">สาเหตุ/ปัจจัยความเสี่ยง</label>
+                                <textarea name="project_risk" id="project_risk" cols="30" rows="10"></textarea>
+                            </p>
+                            <p>
+                                <label for="project_solution">แนวทางแก้ไข/ป้องกันความเสี่ยง</label>
+                                <textarea name="project_solution" id="project_solution" cols="30" rows="10"></textarea>
+                            </p>
+                        </section>
+
+                        <p><input type="submit" value="บันทึก" class="button"> <input type="reset" value="ยกเลิก" class="button"></p>
+
                     </div> <!-- #tab1 -->
 
                     <div id="tab2">
-                       
+
                     </div> <!-- #tab2 -->
 
                     <div id="tab3">
-                        
+
                     </div> <!-- #tab3 -->
                 </section>
             </article>

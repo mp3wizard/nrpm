@@ -68,7 +68,7 @@ aside { border-radius: 10px;  border-right: solid 1px #a19c95; border-bottom: so
   ul { list-style: none; padding: 0; margin: 0; }
 }
 article {
-  div.text { background-color: #fff; border-radius: 5px;  min-height: 220px; padding: 20px; 
+  div.text { background-color: #fff; border-radius: 5px;  min-height: 220px; padding: 20px;
     p.right { text-align: right; }
   }
   >div.text:nth-child(2) { margin: 0 15px; }
@@ -157,7 +157,7 @@ table.number {
     td:nth-child(1) { text-align: left; padding: 20px 20px; background-color: #fff; border: solid 1px #ccc; border-top: none;  }
   }
 }
-.type5 { 
+.type5 {
   tbody tr {
     td { vertical-align: middle; }
     td:nth-child(1), td:nth-child(2) { text-align: left; width: 35%; }
@@ -165,6 +165,13 @@ table.number {
     td:last-child { white-space: nowrap; text-align: right; }
   }
   a { font-size: 1.4em; margin-right: 5px; padding: 0 5px; }
+}
+.type6 {
+  tbody tr {
+    td:nth-child(1) { width: 50px; }
+    td:nth-child(2) { text-align: left; width: 320px; }
+    a { padding: 0 5px; font-size: 1.3em; }
+  }
 }
 
 .tabs { position: relative; z-index: 2; margin-bottom: 0;
@@ -203,7 +210,7 @@ table.number {
 p.indent { text-indent: 30px; }
 input.button { background-color: #c9c9c9; border: solid 1px transparent; border-bottom-color: #545454; border-right-color: #8c8c8c; padding: 0 20px; margin-left: 10px; cursor: pointer; font-size: 12px; }
 // icon color
-a {
+a { 
   .fa-trash-o { color: #c0392b;}
   .fa-pencil { color: #7f8c8d; }
 }
@@ -267,4 +274,37 @@ p.center { text-align: center; }
     input { width: auto; }
     p { text-align: left; }
   }
+}
+.send_agreement { padding: 10px;
+  section {
+    h3 { font-size: 13px; font-family: tahoma; color: $blue; background-color: #9ce9b9; padding: 8px 25px; border-bottom: solid 1px #41624e; font-weight: normal; text-align: left; }
+    p { padding: 0 0 0 25px; font-size: 13px; @extend .clearfix; text-align: left;
+      label {float:left; font-size: 12px; text-align: right; white-space: nowrap; line-height: 24px;
+        &:after { content: ':'; margin: 0 5px; }
+      }
+      label:first-child { @include span-columns(3);}
+      label:nth-child(3) { @include span-columns(2); }
+      input, textarea { border: solid 1px #ccc; height: 24px; padding: 0 5px; }
+      textarea { padding: 5px 10px; height: 100px; @include span-columns(8); resize: none;}
+      input { @include span-columns(2); }
+    }
+    ul { list-style: none; margin: 0; padding: 0 25px;
+      li { @extend .clearfix; margin-bottom: 10px; }
+      input { border: solid 1px #ccc; height: 24px; padding: 0 5px;  @include span-columns(1); }
+      label { font-size: 13px;text-align: right;
+        &:after { content: ':'; margin: 0 5px; }
+      }
+      label:first-child { @include span-columns(4);}
+    }
+  }
+  p { text-align: right; padding-right: 55px; }
+  .table { margin-bottom: 30px; }
+  #project_th, #project_en, #project_process { @include span-columns(6); }
+
+  #project_new, #project_normal, #project_ongoing { width: auto;
+    ~ label { text-align: left; width: 125px;
+      &:after { display:none; }
+    }
+  }
+  #project_ongoing  { clear: left; margin-left: 26.5%; }
 }

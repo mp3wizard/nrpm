@@ -2106,6 +2106,15 @@ table.number tbody tr > td:first-child:before {
   margin-right: 5px;
   padding: 0 5px; }
 
+.type6 tbody tr td:nth-child(1) {
+  width: 50px; }
+.type6 tbody tr td:nth-child(2) {
+  text-align: left;
+  width: 320px; }
+.type6 tbody tr a {
+  padding: 0 5px;
+  font-size: 1.3em; }
+
 .tabs {
   position: relative;
   z-index: 2;
@@ -2430,6 +2439,117 @@ p.center {
 .register div.text p {
   text-align: left; }
 
+.send_agreement {
+  padding: 10px; }
+  .send_agreement section h3 {
+    font-size: 13px;
+    font-family: tahoma;
+    color: #2d5d7b;
+    background-color: #9ce9b9;
+    padding: 8px 25px;
+    border-bottom: solid 1px #41624e;
+    font-weight: normal;
+    text-align: left; }
+  .send_agreement section p {
+    padding: 0 0 0 25px;
+    font-size: 13px;
+    text-align: left; }
+    .send_agreement section p label {
+      float: left;
+      font-size: 12px;
+      text-align: right;
+      white-space: nowrap;
+      line-height: 24px; }
+      .send_agreement section p label:after {
+        content: ':';
+        margin: 0 5px; }
+    .send_agreement section p label:first-child {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      .send_agreement section p label:first-child:last-child {
+        margin-right: 0; }
+    .send_agreement section p label:nth-child(3) {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%; }
+      .send_agreement section p label:nth-child(3):last-child {
+        margin-right: 0; }
+    .send_agreement section p input, .send_agreement section p textarea {
+      border: solid 1px #ccc;
+      height: 24px;
+      padding: 0 5px; }
+    .send_agreement section p textarea {
+      padding: 5px 10px;
+      height: 100px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      resize: none; }
+      .send_agreement section p textarea:last-child {
+        margin-right: 0; }
+    .send_agreement section p input {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%; }
+      .send_agreement section p input:last-child {
+        margin-right: 0; }
+  .send_agreement section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 25px; }
+    .send_agreement section ul li {
+      margin-bottom: 10px; }
+    .send_agreement section ul input {
+      border: solid 1px #ccc;
+      height: 24px;
+      padding: 0 5px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 6.17215%; }
+      .send_agreement section ul input:last-child {
+        margin-right: 0; }
+    .send_agreement section ul label {
+      font-size: 13px;
+      text-align: right; }
+      .send_agreement section ul label:after {
+        content: ':';
+        margin: 0 5px; }
+    .send_agreement section ul label:first-child {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .send_agreement section ul label:first-child:last-child {
+        margin-right: 0; }
+  .send_agreement p {
+    text-align: right;
+    padding-right: 55px; }
+  .send_agreement .table {
+    margin-bottom: 30px; }
+  .send_agreement #project_th, .send_agreement #project_en, .send_agreement #project_process {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .send_agreement #project_th:last-child, .send_agreement #project_en:last-child, .send_agreement #project_process:last-child {
+      margin-right: 0; }
+  .send_agreement #project_new, .send_agreement #project_normal, .send_agreement #project_ongoing {
+    width: auto; }
+    .send_agreement #project_new ~ label, .send_agreement #project_normal ~ label, .send_agreement #project_ongoing ~ label {
+      text-align: left;
+      width: 125px; }
+      .send_agreement #project_new ~ label:after, .send_agreement #project_normal ~ label:after, .send_agreement #project_ongoing ~ label:after {
+        display: none; }
+  .send_agreement #project_ongoing {
+    clear: left;
+    margin-left: 26.5%; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -2499,24 +2619,26 @@ p.center {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before, main:before, .tabs .ui-tabs-nav:before, .register p:before,
+.clearfix:before, main:before, .tabs .ui-tabs-nav:before, .register p:before, .send_agreement section p:before, .send_agreement section ul li:before,
 .clearfix:after,
 main:after,
 .tabs .ui-tabs-nav:after,
-.register p:after {
+.register p:after,
+.send_agreement section p:after,
+.send_agreement section ul li:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after, main:after, .tabs .ui-tabs-nav:after, .register p:after {
+.clearfix:after, main:after, .tabs .ui-tabs-nav:after, .register p:after, .send_agreement section p:after, .send_agreement section ul li:after {
   clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.clearfix, main, .tabs .ui-tabs-nav, .register p {
+.clearfix, main, .tabs .ui-tabs-nav, .register p, .send_agreement section p, .send_agreement section ul li {
   *zoom: 1; }
 
 /* ==========================================================================

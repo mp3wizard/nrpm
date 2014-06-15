@@ -2336,8 +2336,6 @@ p.center {
     width: 18.96686%; }
     .register section section p label:first-child:last-child {
       margin-right: 0; }
-  .register section section p label.auto {
-    width: auto; }
   .register section section p label:nth-child(3) {
     float: left;
     display: block;
@@ -2359,16 +2357,6 @@ p.center {
 .register section section #birthdate, .register section section #monthdate, .register section section #yeardate {
   width: auto;
   margin-right: 10px; }
-.register section section #male, .register section section #female, .register section section #goverment, .register section section #private {
-  position: relative;
-  width: auto;
-  margin-right: 10px; }
-  .register section section #male ~ label, .register section section #female ~ label, .register section section #goverment ~ label, .register section section #private ~ label {
-    text-align: left;
-    width: 50px;
-    line-height: 24px; }
-    .register section section #male ~ label:after, .register section section #female ~ label:after, .register section section #goverment ~ label:after, .register section section #private ~ label:after {
-      display: none; }
 .register section section #floor {
   float: left;
   display: block;
@@ -2397,6 +2385,18 @@ p.center {
   width: 74.41059%; }
   .register section section #publish4:last-child, .register section section #publish7:last-child {
     margin-right: 0; }
+.register label.auto {
+  width: auto !important; }
+.register #male, .register #female, .register #goverment, .register #private, .register #agree {
+  position: relative;
+  width: auto;
+  margin-right: 10px; }
+  .register #male ~ label, .register #female ~ label, .register #goverment ~ label, .register #private ~ label, .register #agree ~ label {
+    text-align: left;
+    width: 50px;
+    line-height: 24px; }
+    .register #male ~ label:after, .register #female ~ label:after, .register #goverment ~ label:after, .register #private ~ label:after, .register #agree ~ label:after {
+      display: none; }
 .register p {
   padding: 0 30px;
   text-align: right; }

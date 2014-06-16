@@ -164,10 +164,83 @@
                         </section>
                     </div> <!-- #tab1 -->
 
-                    <div id="tab2">
+                    <div id="tab2" class="form_control">
+                        <section>
+                            <p>
+                                <label>การยืมเงินทดลองจ่าย</label>
+                                <input type="radio" name="borrow_money" id="borrow"> <label for="borrow">ยืม</label>
+                                <input type="radio" name="borrow_money" id="unborrow"> <label for="unborrow">ไม่ยืม</label>
+                            </p>
+                            <p>
+                                <label for="withdrawal_time">ระยะเวลา</label>
+                                <select name="withdrawal_time" id="withdrawal_time">
+                                    <option value="">1 เดือน</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="withdrawal_date">วันที่</label>
+                                <input type="text" name="withdrawal_date" id="withdrawal_date">
+                            </p>
+                            <p>
+                                <label for="withdrawal_money">จำนวนเงิน</label>
+                                <input type="text" name="withdrawal_money" id="withdrawal_money">
+                            </p>
+                            <p>
+                                <label for="withdrawal_detail">รายละเอียดการใช้จ่าย</label>
+                                <textarea name="withdrawal_detail" id="withdrawal_detail" cols="30" rows="10"></textarea>
+                            </p>
+                        </section>
+                        <p class="right">
+                            <input type="submit" value="บันทึก" class="button">
+                            <input type="reset" value="ยกเลิก" class="button">
+                        </p>
+
+                        <section class="table">
+                            <table class="type9">
+                                <caption class="blue">รายการเบิกจ่าย</caption>
+                                <thead>
+                                    <tr>
+                                        <th>ลำดับ</th>
+                                        <th>ระยะเวลา</th>
+                                        <th>จำนวนเงิน (บาท)</th>
+                                        <th>รายละเอียดการใช้จ่าย</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>มกราคม '57 - กุมภาพันธ์ '57</td>
+                                        <td>8,000.00</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab id quia, iusto dolores, vel provident velit suscipit reiciendis, doloremque et in.</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-pencil"></i></a>
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>มีนาคม '57 - เมษายน '57</td>
+                                        <td>16,000.00</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-pencil"></i></a>
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
                     </div> <!-- #tab2 -->
 
-                    <div id="tab3">
+                    <div id="tab3" class="form_control">
+                        <section>
+                            <h3>ผลการดำเนินโครงการ</h3>
+                            <p>
+                                <label for="">กิจกรรมที่<strong>ได้</strong>ดำเนินการไปแล้ว</label>
+                            </p>
+                        </section>
+
                     </div> <!-- #tab3 -->
 
                     <div id="tab4">

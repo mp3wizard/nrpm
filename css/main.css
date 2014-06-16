@@ -1962,7 +1962,8 @@ section.table:after {
   z-index: 2; }
 .table th {
   background-color: #9ce9b9;
-  font-weight: normal; }
+  font-weight: normal;
+  white-space: nowrap; }
 .table th, .table td {
   padding: 3px 5px;
   text-align: center;
@@ -2133,6 +2134,79 @@ table.number tbody tr > td:first-child:before {
     border: solid 1px #ccc;
     border-top: none; }
 
+.type9 {
+  margin-bottom: 30px; }
+  .type9 a {
+    padding: 0 5px;
+    font-size: 1.3em; }
+  .type9 tr td:nth-child(2) {
+    text-align: left;
+    white-space: nowrap; }
+  .type9 tr td:nth-child(3) {
+    text-align: right; }
+  .type9 tr td:nth-child(4) {
+    text-align: left; }
+  .type9 tr td:last-child {
+    white-space: nowrap;
+    vertical-align: middle; }
+
+/* Form Control */
+.form_control p {
+  line-height: 24px;
+  font-size: 12px; }
+  .form_control p label:first-child {
+    text-align: right;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    white-space: nowrap;
+    vertical-align: top; }
+    .form_control p label:first-child:last-child {
+      margin-right: 0; }
+    .form_control p label:first-child:after {
+      content: ':';
+      display: inline-block;
+      margin: 0 5px; }
+  .form_control p input[type="radio"] ~ label, .form_control p input[type="checkbox"] ~ label {
+    width: auto;
+    white-space: nowrap;
+    margin-right: 20px; }
+    .form_control p input[type="radio"] ~ label:after, .form_control p input[type="checkbox"] ~ label:after {
+      display: none; }
+  .form_control p input[type="text"], .form_control p input[type="date"], .form_control p input[type="phone"], .form_control p input[type="number"] {
+    border: solid 1px #ccc;
+    height: 24px;
+    padding: 0 5px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    font-size: 13px; }
+    .form_control p input[type="text"]:last-child, .form_control p input[type="date"]:last-child, .form_control p input[type="phone"]:last-child, .form_control p input[type="number"]:last-child {
+      margin-right: 0; }
+  .form_control p textarea {
+    padding: 5px 10px;
+    border: solid 1px #ccc;
+    font-family: tahoma;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    height: 100px;
+    resize: none;
+    font-size: 13px; }
+    .form_control p textarea:last-child {
+      margin-right: 0; }
+  .form_control p select {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    .form_control p select:last-child {
+      margin-right: 0; }
+
+/* End of From Control */
 .tabs {
   position: relative;
   z-index: 2;
@@ -2737,9 +2811,10 @@ p.center {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before, main:before, .tabs .ui-tabs-nav:before, .register p:before, .send_agreement section p:before, .send_agreement section ul li:before,
+.clearfix:before, main:before, .form_control p:before, .tabs .ui-tabs-nav:before, .register p:before, .send_agreement section p:before, .send_agreement section ul li:before,
 .clearfix:after,
 main:after,
+.form_control p:after,
 .tabs .ui-tabs-nav:after,
 .register p:after,
 .send_agreement section p:after,
@@ -2749,14 +2824,14 @@ main:after,
   display: table;
   /* 2 */ }
 
-.clearfix:after, main:after, .tabs .ui-tabs-nav:after, .register p:after, .send_agreement section p:after, .send_agreement section ul li:after {
+.clearfix:after, main:after, .form_control p:after, .tabs .ui-tabs-nav:after, .register p:after, .send_agreement section p:after, .send_agreement section ul li:after {
   clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.clearfix, main, .tabs .ui-tabs-nav, .register p, .send_agreement section p, .send_agreement section ul li {
+.clearfix, main, .form_control p, .tabs .ui-tabs-nav, .register p, .send_agreement section p, .send_agreement section ul li {
   *zoom: 1; }
 
 /* ==========================================================================

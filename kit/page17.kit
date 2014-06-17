@@ -3,14 +3,14 @@
 
         <main role="main">
             <aside>
-                <!-- @import "_nav_menu2.kit" -->
+                <!-- @import "_nav_menu4.kit" -->
             </aside>
 
             <article>
-                <h2 class="breadcumb"><a href="page2.html">งานวิจัย</a> ผลการพิจารณา</h2>
+                <h2 class="breadcumb"><a href="page14.html">วารสารออนไลน์</a> ผลการพิจารณา</h2>
 
-                <section class="table type2">
-                    <table>
+                <section class="table">
+                    <table class="type2">
                         <caption class="blue">โครงการที่อยู่ในขั้นตอนของผู้ประสานหน่วยงาน</caption>
                         <thead>
                             <tr>
@@ -78,8 +78,9 @@
                 <section class="tabs">
                     <ul>
                         <li><a href="#tab1">ผลการพิจารณา</a></li>
-                        <li><a href="#tab2">ยืนยันการทำโครงการ</a></li>
+                        <li><a href="#tab2">ไฟล์แนบ</a></li>
                     </ul>
+
                     <div id="tab1" class="form_control">
                         <section class="detail label4">
                             <p>
@@ -171,62 +172,72 @@
                         </section>
                     </div> <!-- #tab1 -->
 
-                    <div id="tab2">
-                        <section class="detail">
-                            <table>
+                    <div id="tab2" class="form_control">
+                        <section class="table">
+                            <table class="type8">
+                                <caption class="blue">เลือกไฟล์ที่ต้องการแนบ</caption>
                                 <tbody>
                                     <tr>
-                                        <td colspan="2">
-                                            <label for="">ชื่อ-สกุล</label> โลเร็ม อิพซั่ม โดรอ ซิท อะเมท
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><label for="">สังกัด</label> โลเร็ม อิพซั่ม โดรอ ซิท อะเมท </td>
-                                        <td><label for="">อีเมล</label> lorem@gmail.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td><label for="">โทร.</label> 02-123-4567</td>
-                                        <td><label for="">มือถือ</label> 099-123-4567</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p>
-                                <label for="">ได้รับการอนุมัติโครงการ เรื่อง</label> โลเร็ม อิพซั่ม โดรอ ซิท อะเมท <br>
-                                <label for="">งบประมาณที่ได้รบอนุมัติ</label> 90,000 บาท
-                            </p>
-                        </section>
-
-                        <h4>การยืนยันดำเนินการ</h4>
-
-                        <section class="detail">
-                            <table class="process">
-                                <tbody>
-                                    <tr>
-                                        <td><input type="radio" name="process" id="yes"> <label for="yes">ดำเนินการ</label></td>
-                                        <td>&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="radio" name="process" id="no"> <label for="no">ไม่ดำเนินการ</label></td>
-                                        <td>&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="right">สาเหตุ :</td>
                                         <td>
-                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            <input type="file" name="file" id="file">
+                                            <select name="" id="">
+                                                <option value="">ประเภทไฟล์เอกสาร</option>
+                                            </select>
+                                            <input type="submit" value="แนบไฟล์" class="button"> <br><br>
+
+                                            <em>ไฟล์แนบต้องมีขนาดไม่เกิน 20 MB สามารถแนบไฟล์ได้มากกว่า 1 ไฟล์</em>
                                         </td>
                                     </tr>
                                 </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td colspan="2">
-                                            <input type="submit" value="บันทึก">
-                                            <input type="reset" value="ยกเลิก">
-                                        </td>
-                                    </tr>
-                                </tfoot>
                             </table>
                         </section>
-                    </div>
+
+                        <section class="table">
+                            <table class="type5">
+                                <caption class="blue">ไฟล์ข้อมูลโครงการ</caption>
+                                <thead>
+                                    <tr>
+                                        <th>ชื่อไฟล์</th>
+                                        <th>ประเภท</th>
+                                        <th>วันที่แนบ</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>researchfile.docx</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">ประเภทเอกสาร</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            01/05/2557
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                            <a href="#"><i class="fa fa-pencil"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>researchfile2.docx</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">ประเภทเอกสาร</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            01/05/2557
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                            <a href="#"><i class="fa fa-pencil"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </div> <!-- #tab2 -->
                 </section>
             </article>
         </main>

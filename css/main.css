@@ -2864,6 +2864,33 @@ h3.orange {
 .label3 .right {
   padding-right: 60px !important; }
 
+.label4, .label5 {
+  margin: 30px 0 0; }
+  .label4 p, .label5 p {
+    margin: 0 0 5px;
+    font-size: 13px; }
+    .label4 p label:first-child, .label5 p label:first-child {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      text-align: left;
+      position: relative; }
+      .label4 p label:first-child:last-child, .label5 p label:first-child:last-child {
+        margin-right: 0; }
+      .label4 p label:first-child:after, .label5 p label:first-child:after {
+        position: absolute;
+        right: 5px;
+        top: 0px; }
+
+.label5 p label:first-child {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  .label5 p label:first-child:last-child {
+    margin-right: 0; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

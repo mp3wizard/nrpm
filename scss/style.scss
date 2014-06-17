@@ -450,3 +450,16 @@ h3.orange { background-color: #ffcd8c; }
   }
   .right { padding-right: 60px!important; }
 }
+
+.label4, .label5 { margin: 30px 0 0;
+  p { margin: 0 0 5px; font-size: 13px;
+    label:first-child { @include span-columns(4); text-align: left; position: relative;
+      &:after { position: absolute; right: 5px; top: 0px; }
+    }
+  }
+}
+.label5 {
+  p {
+    label:first-child { @include span-columns(5); }
+  }
+}

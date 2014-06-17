@@ -1,7 +1,6 @@
 @import "bourbon", "neat";
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
+
+*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
 @mixin font-smoothing($value: on) {
     @if $value == on {
@@ -16,19 +15,17 @@
 
 
 //Usage
-.dark-on-light {
-    @include font-smoothing(off);
-}
+.dark-on-light {@include font-smoothing(off);}
 
-.light-on-dark {
-    @include font-smoothing(on);
-}
+.light-on-dark {@include font-smoothing(on);}
 
+// Variable
 $white: #f2f2f2;
 $blue: #2d5d7b;
 $brown: #744400;
 $bgTD: #eff3fc;
 $font_th: 'TH Chakra Petch';
+// EOF Variable
 
 a { color: $blue; text-decoration: none; @include transition(color .25s ease-out);
   [class^="icon-"]:before, [class*=" icon-"]:before { font-size: 1.6em; }
@@ -196,6 +193,16 @@ table.number {
     td:last-child { white-space: nowrap; vertical-align: middle; }
   }
 }
+
+.type10 { margin-bottom: 70px;
+  a { padding: 0 5px; font-size: 1.3em; }
+  tr {
+    td:first-child {  width: 5%;}
+    td:nth-child(2) { text-align: left; width: 80%;  }
+    td:last-child { white-space: nowrap; vertical-align: middle; }
+  }
+}
+
 /* Form Control */
 .form_control {
   p { line-height: 24px; font-size: 12px;  @extend .clearfix;
@@ -211,6 +218,12 @@ table.number {
     textarea { padding: 5px 10px; border: solid 1px #ccc; font-family: tahoma; @include span-columns(5); height: 100px; resize: none; font-size: 13px; }
     select { @include span-columns(5); }
   }
+  .radio { list-style:none; margin: 0; padding: 0 0 0 30px;
+    label { font-size: 13px; }
+    li { margin-bottom: 10px; }
+  }
+  dl { margin: 20px; }
+  dt { background-color: transparent!important; border: none!important; color: #333!important; font-size: 13px!important;  }
 }
 
 
@@ -250,7 +263,7 @@ table.number {
   }
   h4 { background-color: #8ac1f0; display: inline-block; font-size: 12px; margin-bottom: 0; height: 22px; font-weight: normal; padding: 0 10px; border: solid 1px; border-top-color: #b5d8f5; border-right-color: #73a0c8; border-bottom-color: #6a94b8; border-left-color: #bcddf9; margin-left: 20px;}
 }
-p.indent { text-indent: 30px; }
+p.indent { text-indent: 50px; }
 input.button, button { background-color: #c9c9c9; border: solid 1px transparent; border-bottom-color: #545454; border-right-color: #8c8c8c; padding: 0 20px; margin-left: 10px; cursor: pointer; font-size: 12px; height: 23px; }
 // icon color
 a {
@@ -387,9 +400,24 @@ p.center { text-align: center; }
       label.shift { margin-left: 17%; }
     }
   }
-  section.radio.line { 
+  section.radio.line {
       input { width: auto; margin-bottom: 0; float: left; margin-right: 2.35765%;
-        ~label { text-align: left; float: left; line-height: 28px; } 
+        ~label { text-align: left; float: left; line-height: 28px; }
       }
   }
+}
+
+h3.small { text-align: left; font-weight: normal; font-size: 13px; line-height: 30px; padding: 0 10px; font-family: tahoma; margin: 10px; 
+  strong { font-weight: normal; display: inline-block; padding: 0 5px; text-decoration: underline; }
+}
+h3.blue { background-color: #8bc2f0; }
+h3.green { background-color: #9ce9b9; }
+h3.orange { background-color: #ffb85c; }
+
+.label1 {
+  p {
+    label:first-child { @include span-columns(3.7); }
+    textarea { @include span-columns(8); }
+  }
+  strong { font-weight: normal; display: inline-block; padding: 0 5px; text-decoration: underline; }
 }

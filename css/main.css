@@ -2150,6 +2150,20 @@ table.number tbody tr > td:first-child:before {
     white-space: nowrap;
     vertical-align: middle; }
 
+.type10 {
+  margin-bottom: 70px; }
+  .type10 a {
+    padding: 0 5px;
+    font-size: 1.3em; }
+  .type10 tr td:first-child {
+    width: 5%; }
+  .type10 tr td:nth-child(2) {
+    text-align: left;
+    width: 80%; }
+  .type10 tr td:last-child {
+    white-space: nowrap;
+    vertical-align: middle; }
+
 /* Form Control */
 .form_control p {
   line-height: 24px;
@@ -2205,6 +2219,21 @@ table.number tbody tr > td:first-child:before {
     width: 40.29137%; }
     .form_control p select:last-child {
       margin-right: 0; }
+.form_control .radio {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 30px; }
+  .form_control .radio label {
+    font-size: 13px; }
+  .form_control .radio li {
+    margin-bottom: 10px; }
+.form_control dl {
+  margin: 20px; }
+.form_control dt {
+  background-color: transparent !important;
+  border: none !important;
+  color: #333333 !important;
+  font-size: 13px !important; }
 
 /* End of From Control */
 .tabs {
@@ -2322,7 +2351,7 @@ table.number tbody tr > td:first-child:before {
     margin-left: 20px; }
 
 p.indent {
-  text-indent: 30px; }
+  text-indent: 50px; }
 
 input.button, button {
   background-color: #c9c9c9;
@@ -2741,6 +2770,49 @@ p.center {
     text-align: left;
     float: left;
     line-height: 28px; }
+
+h3.small {
+  text-align: left;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 30px;
+  padding: 0 10px;
+  font-family: tahoma;
+  margin: 10px; }
+  h3.small strong {
+    font-weight: normal;
+    display: inline-block;
+    padding: 0 5px;
+    text-decoration: underline; }
+
+h3.blue {
+  background-color: #8bc2f0; }
+
+h3.green {
+  background-color: #9ce9b9; }
+
+h3.orange {
+  background-color: #ffb85c; }
+
+.label1 p label:first-child {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 29.20262%; }
+  .label1 p label:first-child:last-child {
+    margin-right: 0; }
+.label1 p textarea {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .label1 p textarea:last-child {
+    margin-right: 0; }
+.label1 strong {
+  font-weight: normal;
+  display: inline-block;
+  padding: 0 5px;
+  text-decoration: underline; }
 
 /* ==========================================================================
    Helper classes

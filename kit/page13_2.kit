@@ -234,11 +234,245 @@
                     </div> <!-- #tab2 -->
 
                     <div id="tab3" class="form_control">
-                        <section>
-                            <h3>ผลการดำเนินโครงการ</h3>
-                            <p>
-                                <label for="">กิจกรรมที่<strong>ได้</strong>ดำเนินการไปแล้ว</label>
-                            </p>
+                        <section class="label1">
+                            <h3 class="small blue">ผลการดำเนินโครงการ</h3>
+                            <form action="">
+                                <p>
+                                    <label for="progress_activity">กิจกรรมที่<strong>ได้</strong>ดำเนินการไปแล้ว</label>
+                                    <textarea name="progress_activity" id="progress_activity" cols="30" rows="10"></textarea>
+                                </p>
+                                <p class="right">
+                                    <input type="submit" value="บันทึก" class="button">
+                                    <input type="reset" value="ยกเลิก" class="button">
+                                </p>
+                            </form>
+
+                            <section class="table">
+                                <table class="type10">
+                                    <caption class="green">ไฟล์ข้อมูลโครงการ</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>ลำดับ</th>
+                                            <th>รายละเอียด</th>
+                                            <th>&nbsp;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+                                            <td>
+                                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                                <a href="#"><i class="fa fa-trash-o"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                                            <td>
+                                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                                <a href="#"><i class="fa fa-trash-o"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+
+                            <form action="">
+                                <p>
+                                    <label for="progress_ongoing">กิจกรรมที่<strong>อยู่ระหว่าง</strong>ดำเนินการ</label>
+                                    <textarea name="progress_ongoing" id="progress_ongoing" cols="30" rows="10"></textarea>
+                                </p>
+                                <p class="right">
+                                    <input type="submit" value="บันทึก" class="button">
+                                    <input type="reset" value="ยกเลิก" class="button">
+                                </p>
+                            </form>
+
+                            <section class="table">
+                                <table class="type10">
+                                    <caption class="blue">ไฟล์ข้อมูลโครงการ</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>ลำดับ</th>
+                                            <th>รายละเอียด</th>
+                                            <th>&nbsp;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+                                            <td>
+                                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                                <a href="#"><i class="fa fa-trash-o"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                                            <td>
+                                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                                <a href="#"><i class="fa fa-trash-o"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+
+                            <form action="">
+                                <p>
+                                    <label for="progress_notstart">กิจกรรมที่<strong>ยังไม่ได้</strong>ดำเนินการ</label>
+                                    <textarea name="progress_notstart" id="progress_notstart" cols="30" rows="10"></textarea>
+                                </p>
+                                <p class="right">
+                                    <input type="submit" value="บันทึก" class="button">
+                                    <input type="reset" value="ยกเลิก" class="button">
+                                </p>
+                            </form>
+
+                            <section class="table">
+                                <table class="type10">
+                                    <caption class="red">ไฟล์ข้อมูลโครงการ</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>ลำดับ</th>
+                                            <th>รายละเอียด</th>
+                                            <th>&nbsp;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+                                            <td>
+                                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                                <a href="#"><i class="fa fa-trash-o"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                                            <td>
+                                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                                <a href="#"><i class="fa fa-trash-o"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                        </section>
+
+                        <section class="label1">
+                            <h3 class="small green">กิจกรรมที่<strong>ได้</strong>ดำเนินการไปแล้ว</h3>
+                            <form action="">
+                                <dl>
+                                    <dt>โครงการที่ดำเนินการเสร็จสิ้น</dt>
+                                    <dd>
+                                        <ul class="radio">
+                                            <li><input type="radio" name="progress_complete" id="progress_complete_1"> <label for="progress_complete_1">ดำเนินการเสร็จสิ้น แต่อยู่ระหว่างการรวบรวมเอกสารเบิกจ่าย</label></li>
+                                            <li><input type="radio" name="progress_complete" id="progress_complete_2"> <label for="progress_complete_2">ดำเนินการเสร็จสิ้น แต่อยู่ระหว่างการรวบรวมเอกสารเพื่อจัดทำร่างฉบับสมบูรณ์</label></li>
+                                            <li><input type="radio" name="progress_complete" id="progress_complete_3"> <label for="progress_complete_3">ดำเนินการเสร็จสิ้น ส่งร่างฉบับสมบูรณ์แล้ว</label></li>
+                                            <li><input type="radio" name="progress_complete" id="progress_complete_4"> <label for="progress_complete_4">ดำเนินการเสร็จสิ้น ส่งเล่มฉบับสมูบูรณ์แล้ว</label></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <p class="right">
+                                    <input type="submit" value="บันทึก" class="button">
+                                    <input type="reset" value="ยกเลิก" class="button">
+                                </p>
+                            </form>
+                        </section>
+
+                        <section class="label1">
+                            <h3 class="small orange">องค์ความรู้ที่เกิดจากโครงการบริการวิชาการ</h3>
+                            <form action="">
+                                <p>
+                                    <label for="knowledge_concrete">องค์ความรู้ที่เป็นรูปธรรม</label>
+                                    <textarea name="knowledge_concrete" id="knowledge_concrete" cols="30" rows="10"></textarea>
+                                </p>
+                                <p>
+                                    <label for="knowledge_abstract">องค์ความรู้ที่เป็นนามธรรม</label>
+                                    <textarea name="knowledge_abstract" id="knowledge_abstract" cols="30" rows="10"></textarea>
+                                </p>
+                                <p class="right">
+                                    <input type="submit" value="บันทึก" class="button">
+                                    <input type="reset" value="ยกเลิก" class="button">
+                                </p>
+
+                                <section class="table">
+                                    <table class="type10">
+                                        <caption class="blue">ไฟล์ข้อมูลโครงการ</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>ลำดับ</th>
+                                                <th>รายละเอียด</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+                                                <td>
+                                                    <a href="#"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                                                <td>
+                                                    <a href="#"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+                            </form>
+
+                            <form action="">
+                                <p>
+                                    <label for="knowledge_problem">ปัญหาและอุปสรรค</label>
+                                    <textarea name="knowledge_problem" id="knowledge_problem" cols="30" rows="10"></textarea>
+                                </p>
+                                <p class="right">
+                                    <input type="submit" value="บันทึก" class="button">
+                                    <input type="reset" value="ยกเลิก" class="button">
+                                </p>
+
+                                <section class="table">
+                                    <table class="type10">
+                                        <caption class="red">ไฟล์ข้อมูลโครงการ</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>ลำดับ</th>
+                                                <th>รายละเอียด</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+                                                <td>
+                                                    <a href="#"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                                                <td>
+                                                    <a href="#"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+                            </form>
                         </section>
 
                     </div> <!-- #tab3 -->

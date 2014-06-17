@@ -1,0 +1,214 @@
+<!-- @import "_head.kit" -->
+    <!-- @import "_header.kit" -->
+
+        <main role="main">
+            <aside>
+                <!-- @import "_nav_menu3.kit" -->
+            </aside>
+
+            <article>
+                <h2 class="breadcumb"><a href="page10.html">งานบริการวิชาการ</a> ส่งข้อเสนอ</h2>
+
+                <section class="tabs">
+                    <ul>
+                        <li><a href="#tab1">รายละเอียดโครงการ</a></li>
+                        <li><a href="#tab2">ผู้รับผิดชอบโครงการ</a></li>
+                        <li><a href="#tab3">ไฟล์แนบ</a>
+                    </ul>
+                    <div id="tab1" class="form_control">
+                        <form action="">
+                            <dl>
+                                <dt>รายละเอียดโครงการ</dt>
+                                <dd>
+                                    <p>
+                                        <label for="ejournal_name_th">ชื่อโครงการ (ภาษาไทย)</label>
+                                        <input type="text" name="ejournal_name_th" id="ejournal_name_th">
+                                    </p>
+                                    <p>
+                                        <label for="ejournal_name_en">ชื่อโครงการ (English)</label>
+                                        <input type="text" name="ejournal_name_en" id="ejournal_name_en">
+                                    </p>
+                                    <p>
+                                        <label for="ejournal_type">ประเภทชิ้นงาน</label>
+                                        <select name="ejournal_type" id="ejournal_type">
+                                            <option value="">วารสาร</option>
+                                        </select>
+                                    </p>
+                                    <p>
+                                        <label for="ejournal_level">ประเภทชิ้นงาน</label>
+                                        <select name="ejournal_level" id="ejournal_level">
+                                            <option value="">นานาชาติ</option>
+                                        </select>
+                                    </p>
+                                </dd>
+                            </dl>
+                             <p class="right">
+                                <input type="submit" value="บันทึก" class="button">
+                                <input type="reset" value="ยกเลิก" class="button">
+                            </p>
+                        </form>
+                    </div> <!-- #tab1 -->
+
+                    <div id="tab2" class="form_control">
+                        <h3 class="small orange">ผู้รับผิดชอบโครงการ</h3>
+                        <section >
+                            <p class="right">
+                                <input type="text" name="" id="" placeholder="ชื่อ, นามสกุล, รหัสประชาชน">
+                                <button>สืบค้น</button>
+                            </p>
+                            <section class="table">
+                                <table class="type11">
+                                    <thead>
+                                        <tr>
+                                            <th>รหัสบัตรประชาชน</th>
+                                            <th>ชื่อ - นามสกุล</th>
+                                            <th>เลือก</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1 4558 00069 74 2</td>
+                                            <td>xxxxxxxxxxx xxxxxxx</td>
+                                            <td><a href="#"><i class="fa fa-check-square"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 4558 00069 74 2</td>
+                                            <td>xxxxxxxxxxx xxxxxxx</td>
+                                            <td><a href="#"><i class="fa fa-check-square"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                        </section>
+
+                        <section class="label3">
+                            <form action="">
+                                <p>
+                                    <label for="responsible_id">รหัสบัตรประชาชน</label> <input type="text" name="responsible_id" id="responsible_id">
+                                    <label for="responsible_name">ชื่อ - นามสกุล</label> <input type="text" name="responsible_name" id="responsible_name">
+                                </p>
+                                <p>
+                                    <label for="responsible_minor">ภาควิชา</label> <input type="text" name="responsible_minor" id="responsible_minor">
+                                    <label for="responsible_major">คณะ</label> <input type="text" name="responsible_minor" id="responsible_minor">
+                                </p>
+                                <p>
+                                    <label for="responsible_position">ตำแหน่งการร่วมงาน</label>
+                                    <select name="responsible_position" id="responsible_position">
+                                        <option value=""></option>
+                                    </select>
+                                    <label for="responsible_percent">ร้อยละการร่วมงาน</label>
+                                    <input type="text" name="responsible_percent" id="responsible_percent">
+                                </p>
+                                <p class="right">
+                                    <input type="submit" value="บันทึก" class="button"> <input type="reset" value="ยกเลิก" class="button">
+                                </p>
+                            </form>
+                        </section>
+
+                        <section class="table">
+                            <table class="type7">
+                                <thead>
+                                    <tr>
+                                        <th>รหัสบัตรประชาชน</th>
+                                        <th>ชื่อ - นามสกุล</th>
+                                        <th>ตำแหน่งการร่วมงาน</th>
+                                        <th>ร้อยละการร่วมงาน</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1 4558 00069 74 2</td>
+                                        <td>xxxxxxxxxxx xxxxxxx</td>
+                                        <td>หัวหน้าโครงการ</td>
+                                        <td>80%</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-pencil"></i></a>
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 4558 00069 74 2</td>
+                                        <td>xxxxxxxxxxx xxxxxxx</td>
+                                        <td>หัวหน้าโครงการ</td>
+                                        <td>80%</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-pencil"></i></a>
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </div> <!-- #tab2 -->
+
+                    <div id="tab3" class="form_control">
+                        <section class="table">
+                            <table class="type8">
+                                <caption class="blue">เลือกไฟล์ที่ต้องการแนบ</caption>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="file" name="file" id="file">
+                                            <select name="" id="">
+                                                <option value="">ประเภทไฟล์เอกสาร</option>
+                                            </select>
+                                            <input type="submit" value="แนบไฟล์" class="button"> <br><br>
+
+                                            <em>ไฟล์แนบต้องมีขนาดไม่เกิน 20 MB สามารถแนบไฟล์ได้มากกว่า 1 ไฟล์</em>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+
+                        <section class="table">
+                            <table class="type5">
+                                <caption class="blue">ไฟล์ข้อมูลโครงการ</caption>
+                                <thead>
+                                    <tr>
+                                        <th>ชื่อไฟล์</th>
+                                        <th>ประเภท</th>
+                                        <th>วันที่แนบ</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>researchfile.docx</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">ประเภทเอกสาร</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            01/05/2557
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                            <a href="#"><i class="fa fa-pencil"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>researchfile2.docx</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">ประเภทเอกสาร</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            01/05/2557
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                            <a href="#"><i class="fa fa-pencil"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </div> <!-- #tab3 -->
+                </section>
+            </article>
+        </main>
+        <!-- @import "_footer.kit" -->

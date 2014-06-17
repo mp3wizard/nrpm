@@ -170,14 +170,14 @@ table.number {
     a { padding: 0 5px; font-size: 1.3em; }
   }
 }
-.type7 {
+.type7 { margin-bottom: 30px;
   tbody tr {
     td:nth-child(2) { text-align: left; width: 240px; }
     a { padding: 0 5px; font-size: 1.3em; }
   }
 }
 
-.type8 { margin-bottom: 20px;
+.type8 { margin: 30px 0;
   tbody tr {
     td:nth-child(1) { text-align: left; padding: 20px 20px; background-color: #fff; border: solid 1px #ccc; border-top: none;  }
   }
@@ -203,32 +203,17 @@ table.number {
   }
 }
 
-/* Form Control */
-.form_control {
-  p { line-height: 24px; font-size: 12px;  @extend .clearfix;
-    label:first-child { text-align: right; @include span-columns(3); white-space: nowrap; vertical-align: top;
-      &:after { content:':'; display: inline-block; margin: 0 5px; }
-    }
-    input[type="radio"], input[type="checkbox"] {
-      ~label { width: auto; white-space: nowrap; margin-right: 20px;
-        &:after { display: none; }
-      }
-    }
-    input[type="text"], input[type="date"], input[type="phone"], input[type="number"] { border: solid 1px #ccc; height: 24px; padding: 0 5px; @include span-columns(5); font-size: 13px;}
-    textarea { padding: 5px 10px; border: solid 1px #ccc; font-family: tahoma; @include span-columns(5); height: 100px; resize: none; font-size: 13px; }
-    select { @include span-columns(5); }
+.type11 { margin: 0 0 30px;
+  tr {
+    th:first-child { width: 35%; }
+    th:nth-child(2) { width: 55%;  }
   }
-  .radio { list-style:none; margin: 0; padding: 0 0 0 30px;
-    label { font-size: 13px; }
-    li { margin-bottom: 10px; }
+  tr {
+    td:nth-child(2) { text-align: left; padding: 0 20px; }
   }
-  dl { margin: 20px; }
-  dt { background-color: transparent!important; border: none!important; color: #333!important; font-size: 13px!important;  }
 }
 
 
-
-/* End of From Control */
 
 .tabs { position: relative; z-index: 2; margin-bottom: 0;
   &:after { content:'';  height: 1px; position: absolute; box-shadow: 0 0 5px 5px rgba(0,0,0,.65);top:auto; bottom: 1px; left: 8px; right: 8px; z-index: -1; }
@@ -407,12 +392,43 @@ p.center { text-align: center; }
   }
 }
 
-h3.small { text-align: left; font-weight: normal; font-size: 13px; line-height: 30px; padding: 0 10px; font-family: tahoma; margin: 10px; 
+h3.small { font-size: 13px; font-family: tahoma; color: $blue; background-color: #9ce9b9; padding: 8px 25px; border-bottom: solid 1px #41624e; font-weight: normal; text-align: left; margin: 10px;
   strong { font-weight: normal; display: inline-block; padding: 0 5px; text-decoration: underline; }
 }
+
+
 h3.blue { background-color: #8bc2f0; }
 h3.green { background-color: #9ce9b9; }
-h3.orange { background-color: #ffb85c; }
+h3.orange { background-color: #ffcd8c; }
+
+/* Form Control */
+.form_control {
+  p { line-height: 24px; font-size: 12px;  @extend .clearfix;
+    &.right {
+      input[type="text"], input[type="date"], input[type="phone"], input[type="number"] { display: inline-block; float: none;}
+    }
+    label:first-child, label:nth-child(3) { text-align: right; @include span-columns(3); white-space: nowrap; vertical-align: top;
+      &:after { content:':'; display: inline-block; margin: 0 5px; }
+    }
+    input[type="radio"], input[type="checkbox"] {
+      ~label { width: auto; white-space: nowrap; margin-right: 20px;
+        &:after { display: none; }
+      }
+    }
+    input[type="text"], input[type="date"], input[type="phone"], input[type="number"] { border: solid 1px #ccc; height: 24px; padding: 0 5px; @include span-columns(5); font-size: 12px;}
+    textarea { padding: 5px 10px; border: solid 1px #ccc; font-family: tahoma; @include span-columns(5); height: 100px; resize: none; font-size: 13px; }
+    select { @include span-columns(5); height: 24px; position: relative; top: 2px; }
+  }
+  .radio { list-style:none; margin: 0; 
+    label { font-size: 13px; }
+    li { margin-bottom: 10px; }
+  }
+  dl { margin: 20px; }
+  dt { background-color: transparent!important; border: none!important; color: #333!important; font-size: 13px!important;  }
+  dd { padding: 0 0 0 40px; }
+}
+
+/* End of From Control */
 
 .label1 {
   p {
@@ -426,4 +442,11 @@ h3.orange { background-color: #ffb85c; }
   p {
     label:first-child { @include span-columns(3); text-align: left; margin-right: 0; }
   }
+}
+.label3 {
+  p {
+    input[type="text"], input[type="date"], input[type="phone"], input[type="number"], select { @include span-columns(3) }
+    label:nth-child(3) { @include span-columns(2); }
+  }
+  .right { padding-right: 60px!important; }
 }

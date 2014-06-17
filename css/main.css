@@ -2118,15 +2118,17 @@ table.number tbody tr > td:first-child:before {
   padding: 0 5px;
   font-size: 1.3em; }
 
-.type7 tbody tr td:nth-child(2) {
-  text-align: left;
-  width: 240px; }
-.type7 tbody tr a {
-  padding: 0 5px;
-  font-size: 1.3em; }
+.type7 {
+  margin-bottom: 30px; }
+  .type7 tbody tr td:nth-child(2) {
+    text-align: left;
+    width: 240px; }
+  .type7 tbody tr a {
+    padding: 0 5px;
+    font-size: 1.3em; }
 
 .type8 {
-  margin-bottom: 20px; }
+  margin: 30px 0; }
   .type8 tbody tr td:nth-child(1) {
     text-align: left;
     padding: 20px 20px;
@@ -2164,78 +2166,16 @@ table.number tbody tr > td:first-child:before {
     white-space: nowrap;
     vertical-align: middle; }
 
-/* Form Control */
-.form_control p {
-  line-height: 24px;
-  font-size: 12px; }
-  .form_control p label:first-child {
-    text-align: right;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%;
-    white-space: nowrap;
-    vertical-align: top; }
-    .form_control p label:first-child:last-child {
-      margin-right: 0; }
-    .form_control p label:first-child:after {
-      content: ':';
-      display: inline-block;
-      margin: 0 5px; }
-  .form_control p input[type="radio"] ~ label, .form_control p input[type="checkbox"] ~ label {
-    width: auto;
-    white-space: nowrap;
-    margin-right: 20px; }
-    .form_control p input[type="radio"] ~ label:after, .form_control p input[type="checkbox"] ~ label:after {
-      display: none; }
-  .form_control p input[type="text"], .form_control p input[type="date"], .form_control p input[type="phone"], .form_control p input[type="number"] {
-    border: solid 1px #ccc;
-    height: 24px;
-    padding: 0 5px;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%;
-    font-size: 13px; }
-    .form_control p input[type="text"]:last-child, .form_control p input[type="date"]:last-child, .form_control p input[type="phone"]:last-child, .form_control p input[type="number"]:last-child {
-      margin-right: 0; }
-  .form_control p textarea {
-    padding: 5px 10px;
-    border: solid 1px #ccc;
-    font-family: tahoma;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%;
-    height: 100px;
-    resize: none;
-    font-size: 13px; }
-    .form_control p textarea:last-child {
-      margin-right: 0; }
-  .form_control p select {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%; }
-    .form_control p select:last-child {
-      margin-right: 0; }
-.form_control .radio {
-  list-style: none;
-  margin: 0;
-  padding: 0 0 0 30px; }
-  .form_control .radio label {
-    font-size: 13px; }
-  .form_control .radio li {
-    margin-bottom: 10px; }
-.form_control dl {
-  margin: 20px; }
-.form_control dt {
-  background-color: transparent !important;
-  border: none !important;
-  color: #333333 !important;
-  font-size: 13px !important; }
+.type11 {
+  margin: 0 0 30px; }
+  .type11 tr th:first-child {
+    width: 35%; }
+  .type11 tr th:nth-child(2) {
+    width: 55%; }
+  .type11 tr td:nth-child(2) {
+    text-align: left;
+    padding: 0 20px; }
 
-/* End of From Control */
 .tabs {
   position: relative;
   z-index: 2;
@@ -2772,12 +2712,14 @@ p.center {
     line-height: 28px; }
 
 h3.small {
-  text-align: left;
-  font-weight: normal;
   font-size: 13px;
-  line-height: 30px;
-  padding: 0 10px;
   font-family: tahoma;
+  color: #2d5d7b;
+  background-color: #9ce9b9;
+  padding: 8px 25px;
+  border-bottom: solid 1px #41624e;
+  font-weight: normal;
+  text-align: left;
   margin: 10px; }
   h3.small strong {
     font-weight: normal;
@@ -2792,8 +2734,87 @@ h3.green {
   background-color: #9ce9b9; }
 
 h3.orange {
-  background-color: #ffb85c; }
+  background-color: #ffcd8c; }
 
+/* Form Control */
+.form_control p {
+  line-height: 24px;
+  font-size: 12px; }
+  .form_control p.right input[type="text"], .form_control p.right input[type="date"], .form_control p.right input[type="phone"], .form_control p.right input[type="number"] {
+    display: inline-block;
+    float: none; }
+  .form_control p label:first-child, .form_control p label:nth-child(3) {
+    text-align: right;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    white-space: nowrap;
+    vertical-align: top; }
+    .form_control p label:first-child:last-child, .form_control p label:nth-child(3):last-child {
+      margin-right: 0; }
+    .form_control p label:first-child:after, .form_control p label:nth-child(3):after {
+      content: ':';
+      display: inline-block;
+      margin: 0 5px; }
+  .form_control p input[type="radio"] ~ label, .form_control p input[type="checkbox"] ~ label {
+    width: auto;
+    white-space: nowrap;
+    margin-right: 20px; }
+    .form_control p input[type="radio"] ~ label:after, .form_control p input[type="checkbox"] ~ label:after {
+      display: none; }
+  .form_control p input[type="text"], .form_control p input[type="date"], .form_control p input[type="phone"], .form_control p input[type="number"] {
+    border: solid 1px #ccc;
+    height: 24px;
+    padding: 0 5px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    font-size: 12px; }
+    .form_control p input[type="text"]:last-child, .form_control p input[type="date"]:last-child, .form_control p input[type="phone"]:last-child, .form_control p input[type="number"]:last-child {
+      margin-right: 0; }
+  .form_control p textarea {
+    padding: 5px 10px;
+    border: solid 1px #ccc;
+    font-family: tahoma;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    height: 100px;
+    resize: none;
+    font-size: 13px; }
+    .form_control p textarea:last-child {
+      margin-right: 0; }
+  .form_control p select {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    height: 24px;
+    position: relative;
+    top: 2px; }
+    .form_control p select:last-child {
+      margin-right: 0; }
+.form_control .radio {
+  list-style: none;
+  margin: 0; }
+  .form_control .radio label {
+    font-size: 13px; }
+  .form_control .radio li {
+    margin-bottom: 10px; }
+.form_control dl {
+  margin: 20px; }
+.form_control dt {
+  background-color: transparent !important;
+  border: none !important;
+  color: #333333 !important;
+  font-size: 13px !important; }
+.form_control dd {
+  padding: 0 0 0 40px; }
+
+/* End of From Control */
 .label1 p label:first-child {
   float: left;
   display: block;
@@ -2825,6 +2846,23 @@ h3.orange {
     margin-right: 0; }
     .label2 p label:first-child:last-child {
       margin-right: 0; }
+
+.label3 p input[type="text"], .label3 p input[type="date"], .label3 p input[type="phone"], .label3 p input[type="number"], .label3 p select {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .label3 p input[type="text"]:last-child, .label3 p input[type="date"]:last-child, .label3 p input[type="phone"]:last-child, .label3 p input[type="number"]:last-child, .label3 p select:last-child {
+    margin-right: 0; }
+.label3 p label:nth-child(3) {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  .label3 p label:nth-child(3):last-child {
+    margin-right: 0; }
+.label3 .right {
+  padding-right: 60px !important; }
 
 /* ==========================================================================
    Helper classes
@@ -2895,27 +2933,27 @@ h3.orange {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before, main:before, .form_control p:before, .tabs .ui-tabs-nav:before, .register p:before, .send_agreement section p:before, .send_agreement section ul li:before,
+.clearfix:before, main:before, .tabs .ui-tabs-nav:before, .register p:before, .send_agreement section p:before, .send_agreement section ul li:before, .form_control p:before,
 .clearfix:after,
 main:after,
-.form_control p:after,
 .tabs .ui-tabs-nav:after,
 .register p:after,
 .send_agreement section p:after,
-.send_agreement section ul li:after {
+.send_agreement section ul li:after,
+.form_control p:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after, main:after, .form_control p:after, .tabs .ui-tabs-nav:after, .register p:after, .send_agreement section p:after, .send_agreement section ul li:after {
+.clearfix:after, main:after, .tabs .ui-tabs-nav:after, .register p:after, .send_agreement section p:after, .send_agreement section ul li:after, .form_control p:after {
   clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.clearfix, main, .form_control p, .tabs .ui-tabs-nav, .register p, .send_agreement section p, .send_agreement section ul li {
+.clearfix, main, .tabs .ui-tabs-nav, .register p, .send_agreement section p, .send_agreement section ul li, .form_control p {
   *zoom: 1; }
 
 /* ==========================================================================

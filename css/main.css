@@ -2814,6 +2814,18 @@ h3.orange {
   padding: 0 5px;
   text-decoration: underline; }
 
+.label2 {
+  padding: 20px 30px; }
+  .label2 p label:first-child {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    text-align: left;
+    margin-right: 0; }
+    .label2 p label:first-child:last-child {
+      margin-right: 0; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

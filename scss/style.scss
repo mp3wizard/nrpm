@@ -421,3 +421,9 @@ h3.orange { background-color: #ffb85c; }
   }
   strong { font-weight: normal; display: inline-block; padding: 0 5px; text-decoration: underline; }
 }
+
+.label2 { padding: 20px 30px;
+  p {
+    label:first-child { @include span-columns(3); text-align: left; margin-right: 0; }
+  }
+}

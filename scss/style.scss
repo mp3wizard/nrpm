@@ -57,6 +57,7 @@ main { padding: 20px 15px 100px; @extend .clearfix; background: #fff url('../img
 nav {
   ul { margin: 0; padding: 0; }
 }
+
 aside { border-radius: 10px;  border-right: solid 1px #a19c95; border-bottom: solid 1px #a19c95; box-shadow: 0 5px 5px rgba(0,0,0,.6); min-height: 220px;
   dl { margin: 0; }
   dt { text-align: center; background: #8abcf3 url('../img/bg-dt.png') repeat-x; height: 27px; line-height: 25px; color: $white;  font-weight: bold; border-radius: 5px; border-right: solid 1px #456586; border-bottom: solid 1px #3b5067; border-left: solid 1px #8db6de; border-top: solid 1px #8aaac4; font-family: $font_th; font-weight: 700; font-size: 20px;  }
@@ -64,6 +65,11 @@ aside { border-radius: 10px;  border-right: solid 1px #a19c95; border-bottom: so
   a { color: $blue; font-size: 14px; background: url('../img/bullet-nav.png') no-repeat 15px 7px; padding-left: 30px;  }
   ul { list-style: none; padding: 0; margin: 0; }
 }
+
+#step { 
+  li a { background: none; }
+}
+
 article {
   div.text { background-color: #fff; border-radius: 5px;  min-height: 220px; padding: 20px;
     p.right { text-align: right; }
@@ -419,7 +425,7 @@ h3.orange { background-color: #ffcd8c; }
     textarea { padding: 5px 10px; border: solid 1px #ccc; font-family: tahoma; @include span-columns(5); height: 100px; resize: none; font-size: 13px; }
     select { @include span-columns(5); height: 24px; position: relative; top: 2px; }
   }
-  .radio { list-style:none; margin: 0; 
+  .radio { list-style:none; margin: 0;
     label { font-size: 13px; }
     li { margin-bottom: 10px; }
   }
@@ -463,3 +469,12 @@ h3.orange { background-color: #ffcd8c; }
     label:first-child { @include span-columns(5); }
   }
 }
+
+.head { 
+  h3 { text-align: left;font-family: tahoma; font-weight: normal; font-size: 13px; height: 25px; line-height: 20px; border-radius: 5px 5px 0 0;  border:solid 1px transparent; padding: 0 10px; background-image: url('../img/bg-caption-orange.png'); background-color: #c4965e;
+    border-top-color:#f6d7bc; border-right-color:#846644; border-bottom-color: #523f27; border-left-color: #f3c8a3;
+
+    &:before { display: inline-block; content:''; @include size(12px 10px); background: url('../img/bullet-caption.png') no-repeat; margin-right: 10px; color: #0d2a48; }
+  }
+}
+div.bg { background: #fff; padding: 20px 10px; margin-top: -15px; }

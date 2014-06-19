@@ -1884,6 +1884,9 @@ aside {
     padding: 0;
     margin: 0; }
 
+#step li a {
+  background: none; }
+
 article div.text {
   background-color: #fff;
   border-radius: 5px;
@@ -2890,6 +2893,36 @@ h3.orange {
   width: 40.29137%; }
   .label5 p label:first-child:last-child {
     margin-right: 0; }
+
+.head h3 {
+  text-align: left;
+  font-family: tahoma;
+  font-weight: normal;
+  font-size: 13px;
+  height: 25px;
+  line-height: 20px;
+  border-radius: 5px 5px 0 0;
+  border: solid 1px transparent;
+  padding: 0 10px;
+  background-image: url("../img/bg-caption-orange.png");
+  background-color: #c4965e;
+  border-top-color: #f6d7bc;
+  border-right-color: #846644;
+  border-bottom-color: #523f27;
+  border-left-color: #f3c8a3; }
+  .head h3:before {
+    display: inline-block;
+    content: '';
+    height: 10px;
+    width: 12px;
+    background: url("../img/bullet-caption.png") no-repeat;
+    margin-right: 10px;
+    color: #0d2a48; }
+
+div.bg {
+  background: #fff;
+  padding: 20px 10px;
+  margin-top: -15px; }
 
 /* ==========================================================================
    Helper classes

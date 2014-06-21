@@ -2179,6 +2179,39 @@ table.number tbody tr > td:first-child:before {
     text-align: left;
     padding: 0 20px; }
 
+.table_print caption {
+  text-align: left;
+  font-size: 13px;
+  position: relative;
+  margin-bottom: 20px; }
+  .table_print caption p {
+    margin: 0;
+    padding: 5px;
+    border: solid 1px #333;
+    border-top: none; }
+  .table_print caption p:first-child {
+    border: solid 2px #333; }
+
+.type12, .type13 {
+  border-collapse: collapse; }
+  .type12 thead tr th:nth-child(1), .type12 thead tr th:nth-child(4), .type13 thead tr th:nth-child(1), .type13 thead tr th:nth-child(4) {
+    width: 30%; }
+  .type12 thead tr th:nth-child(2), .type12 thead tr th:nth-child(3), .type13 thead tr th:nth-child(2), .type13 thead tr th:nth-child(3) {
+    width: 20%; }
+  .type12 td, .type12 th, .type13 td, .type13 th {
+    text-align: center;
+    padding: 5px 10px;
+    border: solid 1px #333; }
+  .type12 th, .type13 th {
+    font-size: 13px; }
+  .type12 tbody tr td, .type13 tbody tr td {
+    font-size: 13px; }
+  .type12 tbody tr td:nth-child(1), .type13 tbody tr td:nth-child(1) {
+    text-align: left; }
+
+.type13 tbody tr td:nth-child(2), .type13 tbody tr td:nth-child(4), .type13 tfoot tr td:nth-child(2), .type13 tfoot tr td:nth-child(4) {
+  text-align: right; }
+
 .tabs {
   position: relative;
   z-index: 2;
@@ -2923,6 +2956,10 @@ div.bg {
   background: #fff;
   padding: 20px 10px;
   margin-top: -15px; }
+
+.bg2 {
+  background-color: #fff;
+  padding: 20px 10px; }
 
 /* ==========================================================================
    Helper classes

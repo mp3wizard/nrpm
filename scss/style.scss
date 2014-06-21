@@ -66,7 +66,7 @@ aside { border-radius: 10px;  border-right: solid 1px #a19c95; border-bottom: so
   ul { list-style: none; padding: 0; margin: 0; }
 }
 
-#step { 
+#step {
   li a { background: none; }
 }
 
@@ -216,6 +216,32 @@ table.number {
   }
   tr {
     td:nth-child(2) { text-align: left; padding: 0 20px; }
+  }
+}
+
+.table_print {
+  caption { text-align: left; font-size: 13px; position: relative; margin-bottom: 20px;
+    p { margin: 0; padding: 5px; border: solid 1px #333; border-top: none; }
+    p:first-child { border: solid 2px #333; }
+  }
+}
+
+.type12, .type13 {border-collapse: collapse;
+  thead tr {
+    th:nth-child(1), th:nth-child(4) { width: 30%; }
+    th:nth-child(2), th:nth-child(3) { width: 20%; }
+  }
+  td, th { text-align: center; padding: 5px 10px; border: solid 1px #333; }
+  th { font-size: 13px; }
+  tbody tr {
+    td { font-size: 13px; }
+    td:nth-child(1) { text-align: left; }
+  }
+}
+
+.type13 {
+  tbody tr, tfoot tr {
+    td:nth-child(2), td:nth-child(4) { text-align: right;; }
   }
 }
 
@@ -470,7 +496,7 @@ h3.orange { background-color: #ffcd8c; }
   }
 }
 
-.head { 
+.head {
   h3 { text-align: left;font-family: tahoma; font-weight: normal; font-size: 13px; height: 25px; line-height: 20px; border-radius: 5px 5px 0 0;  border:solid 1px transparent; padding: 0 10px; background-image: url('../img/bg-caption-orange.png'); background-color: #c4965e;
     border-top-color:#f6d7bc; border-right-color:#846644; border-bottom-color: #523f27; border-left-color: #f3c8a3;
 
@@ -478,3 +504,4 @@ h3.orange { background-color: #ffcd8c; }
   }
 }
 div.bg { background: #fff; padding: 20px 10px; margin-top: -15px; }
+.bg2 { background-color: #fff; padding: 20px 10px;  }

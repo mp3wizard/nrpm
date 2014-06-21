@@ -221,12 +221,12 @@ table.number {
 
 .table_print {
   caption { text-align: left; font-size: 13px; position: relative; margin-bottom: 20px;
-    p { margin: 0; padding: 5px; border: solid 1px #333; border-top: none; }
+    p { margin: 0; padding: 5px; border: none; border-top: none; }
     p:first-child { border: solid 2px #333; }
   }
 }
 
-.type12, .type13 {border-collapse: collapse;
+.type12, .type13, .type14, .type15, .type16, .type17 {border-collapse: collapse; margin-bottom: 30px;
   thead tr {
     th:nth-child(1), th:nth-child(4) { width: 30%; }
     th:nth-child(2), th:nth-child(3) { width: 20%; }
@@ -245,7 +245,26 @@ table.number {
   }
 }
 
+.type14 { width: 50%;
+  caption { text-align: left; }
+  td { white-space: nowrap; }
+}
 
+.type15 {
+  thead tr {
+    th:nth-child(1) { width: 30%; }
+    th:nth-child(2) { width: 10%; }
+    th:nth-child(3), th:nth-child(4), th:nth-child(5) { width: 20%; }
+  }
+}
+
+.type17 {
+  thead tr {
+    th:nth-child(1) { width: 45%; }
+    th:nth-child(3), th:nth-child(2) { width: 20%; }
+    th:nth-child(4) { width: 15%; }
+  }
+}
 
 .tabs { position: relative; z-index: 2; margin-bottom: 0;
   &:after { content:'';  height: 1px; position: absolute; box-shadow: 0 0 5px 5px rgba(0,0,0,.65);top:auto; bottom: 1px; left: 8px; right: 8px; z-index: -1; }

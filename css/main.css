@@ -2187,30 +2187,52 @@ table.number tbody tr > td:first-child:before {
   .table_print caption p {
     margin: 0;
     padding: 5px;
-    border: solid 1px #333;
+    border: none;
     border-top: none; }
   .table_print caption p:first-child {
     border: solid 2px #333; }
 
-.type12, .type13 {
-  border-collapse: collapse; }
-  .type12 thead tr th:nth-child(1), .type12 thead tr th:nth-child(4), .type13 thead tr th:nth-child(1), .type13 thead tr th:nth-child(4) {
+.type12, .type13, .type14, .type15, .type16, .type17 {
+  border-collapse: collapse;
+  margin-bottom: 30px; }
+  .type12 thead tr th:nth-child(1), .type12 thead tr th:nth-child(4), .type13 thead tr th:nth-child(1), .type13 thead tr th:nth-child(4), .type14 thead tr th:nth-child(1), .type14 thead tr th:nth-child(4), .type15 thead tr th:nth-child(1), .type15 thead tr th:nth-child(4), .type16 thead tr th:nth-child(1), .type16 thead tr th:nth-child(4), .type17 thead tr th:nth-child(1), .type17 thead tr th:nth-child(4) {
     width: 30%; }
-  .type12 thead tr th:nth-child(2), .type12 thead tr th:nth-child(3), .type13 thead tr th:nth-child(2), .type13 thead tr th:nth-child(3) {
+  .type12 thead tr th:nth-child(2), .type12 thead tr th:nth-child(3), .type13 thead tr th:nth-child(2), .type13 thead tr th:nth-child(3), .type14 thead tr th:nth-child(2), .type14 thead tr th:nth-child(3), .type15 thead tr th:nth-child(2), .type15 thead tr th:nth-child(3), .type16 thead tr th:nth-child(2), .type16 thead tr th:nth-child(3), .type17 thead tr th:nth-child(2), .type17 thead tr th:nth-child(3) {
     width: 20%; }
-  .type12 td, .type12 th, .type13 td, .type13 th {
+  .type12 td, .type12 th, .type13 td, .type13 th, .type14 td, .type14 th, .type15 td, .type15 th, .type16 td, .type16 th, .type17 td, .type17 th {
     text-align: center;
     padding: 5px 10px;
     border: solid 1px #333; }
-  .type12 th, .type13 th {
+  .type12 th, .type13 th, .type14 th, .type15 th, .type16 th, .type17 th {
     font-size: 13px; }
-  .type12 tbody tr td, .type13 tbody tr td {
+  .type12 tbody tr td, .type13 tbody tr td, .type14 tbody tr td, .type15 tbody tr td, .type16 tbody tr td, .type17 tbody tr td {
     font-size: 13px; }
-  .type12 tbody tr td:nth-child(1), .type13 tbody tr td:nth-child(1) {
+  .type12 tbody tr td:nth-child(1), .type13 tbody tr td:nth-child(1), .type14 tbody tr td:nth-child(1), .type15 tbody tr td:nth-child(1), .type16 tbody tr td:nth-child(1), .type17 tbody tr td:nth-child(1) {
     text-align: left; }
 
 .type13 tbody tr td:nth-child(2), .type13 tbody tr td:nth-child(4), .type13 tfoot tr td:nth-child(2), .type13 tfoot tr td:nth-child(4) {
   text-align: right; }
+
+.type14 {
+  width: 50%; }
+  .type14 caption {
+    text-align: left; }
+  .type14 td {
+    white-space: nowrap; }
+
+.type15 thead tr th:nth-child(1) {
+  width: 30%; }
+.type15 thead tr th:nth-child(2) {
+  width: 10%; }
+.type15 thead tr th:nth-child(3), .type15 thead tr th:nth-child(4), .type15 thead tr th:nth-child(5) {
+  width: 20%; }
+
+.type17 thead tr th:nth-child(1) {
+  width: 45%; }
+.type17 thead tr th:nth-child(3), .type17 thead tr th:nth-child(2) {
+  width: 20%; }
+.type17 thead tr th:nth-child(4) {
+  width: 15%; }
 
 .tabs {
   position: relative;

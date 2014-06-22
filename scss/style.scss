@@ -25,6 +25,7 @@ $blue: #2d5d7b;
 $brown: #744400;
 $bgTD: #eff3fc;
 $font_th: 'TH Chakra Petch';
+$alizarin: #e74c3c;
 // EOF Variable
 
 a { color: $blue; text-decoration: none; @include transition(color .25s ease-out);
@@ -55,7 +56,7 @@ main { padding: 20px 15px 100px; @extend .clearfix; background: #fff url('../img
 }
 
 nav {
-  ul { margin: 0; padding: 0; }
+  ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 
 aside { border-radius: 10px;  border-right: solid 1px #a19c95; border-bottom: solid 1px #a19c95; box-shadow: 0 5px 5px rgba(0,0,0,.6); min-height: 220px;
@@ -63,7 +64,6 @@ aside { border-radius: 10px;  border-right: solid 1px #a19c95; border-bottom: so
   dt { text-align: center; background: #8abcf3 url('../img/bg-dt.png') repeat-x; height: 27px; line-height: 25px; color: $white;  font-weight: bold; border-radius: 5px; border-right: solid 1px #456586; border-bottom: solid 1px #3b5067; border-left: solid 1px #8db6de; border-top: solid 1px #8aaac4; font-family: $font_th; font-weight: 700; font-size: 20px;  }
   dd { margin: 0; padding: 10px 0; }
   a { color: $blue; font-size: 14px; background: url('../img/bullet-nav.png') no-repeat 15px 7px; padding-left: 30px;  }
-  ul { list-style: none; padding: 0; margin: 0; }
 }
 
 #step {
@@ -454,7 +454,7 @@ h3.orange { background-color: #ffcd8c; }
 
 /* Form Control */
 .form_control {
-  p { line-height: 24px; font-size: 12px;  @extend .clearfix;
+  p, li { line-height: 24px; font-size: 12px;  @extend .clearfix;
     &.right {
       input[type="text"], input[type="date"], input[type="phone"], input[type="number"] { display: inline-block; float: none;}
     }
@@ -467,13 +467,16 @@ h3.orange { background-color: #ffcd8c; }
       }
     }
     input[type="text"], input[type="date"], input[type="phone"], input[type="number"] { border: solid 1px #ccc; height: 24px; padding: 0 5px; @include span-columns(5); font-size: 12px;}
-    textarea { padding: 5px 10px; border: solid 1px #ccc; font-family: tahoma; @include span-columns(5); height: 100px; resize: none; font-size: 13px; }
+    textarea { padding: 5px 10px; border: solid 1px #ccc; font-family: tahoma; @include span-columns(5); height: 100px; resize: none; font-size: 13px; 
+      &.full { @include span-columns(11); @include shift(.5); }
+    }
     select { @include span-columns(5); height: 24px; position: relative; top: 2px; }
   }
   .radio { list-style:none; margin: 0;
     label { font-size: 13px; }
     li { margin-bottom: 10px; }
   }
+  .text {  list-style: none; margin: 0; padding: 0 0 0 25px; }
   dl { margin: 20px; }
   dt { background-color: transparent!important; border: none!important; color: #333!important; font-size: 13px!important;  }
   dd { padding: 0 0 0 40px; }
@@ -524,3 +527,42 @@ h3.orange { background-color: #ffcd8c; }
 }
 div.bg { background: #fff; padding: 20px 10px; margin-top: -15px; }
 .bg2 { background-color: #fff; padding: 20px 10px;  }
+
+.head {
+
+  dl, ul, p { padding-left: 30px;
+    label:first-child { @include span-columns(4); }
+  }
+  dl { margin: 0 0 30px 0;
+    .radio { padding: 0; }
+    p { padding-left: 0; }
+  }
+  dt { font-weight: bold; margin-bottom: 5px; }
+  dd{ margin:0 0 30px 0; padding: 0; }
+  em { color: $alizarin; font-style: normal; @include shift(4); }
+  .radio { padding-left: 30px; }
+  .text {
+    label:first-child { @include span-columns(5); }
+    input[type="text"] { @include span-columns(2.85); }
+    em { @include shift(5) }
+  }
+  li.right { text-align: right; padding-right: 4.95% }
+  textarea { }
+  input[type="text"] ~ label, input[type="date"] ~ label {  float: left; width: auto;
+    &:after { display: none; }
+  }
+  .number {
+    input[type="text"] { @include span-columns(1); }
+  }
+  .date {
+    input[type="date"] { @include span-columns(3); }
+  }
+  .money { text-align: right; }
+  .editor { @include span-columns(11.5); }
+  br { clear: both; }
+  .editor ~ em { @include shift(0); }
+}
+.right { text-align: right; }
+.form_control.bg { 
+  h3 { margin-left: 0; margin-right: 0; }
+}

@@ -3,55 +3,284 @@
 
         <main role="main">
             <aside>
+                <!-- $menu1 = active -->
+                <!-- $menu2 = inactive -->
+                <!-- $menu3 = inactive -->
+                <!-- $menu4 = inactive -->
+                <!-- $menu5 = inactive -->
+                <!-- $menu6 = inactive -->
+
                 <!-- @import "_nav_menu6.kit" -->
             </aside>
 
             <article>
                 <h2 class="breadcumb"><a href="#">ส่งงานวิจัย</a> รายละเอียดโครงการ</h2>
                 <div class="bg">
-                    <section class="head">
+                    <section class="head form_control">
                         <h3>ข้อมูลผลสำเร็จ</h3>
+
+                        <dl>
+                            <dt>ยุทธศาสตร์การพัฒนาประเทศตามแผนพัฒนาเศรษฐกิจและสังคมแห่งชาติ</dt>
+                            <dd>
+                                <p>
+                                    <label for="strategic_01">ยุทธศาสตร์</label>
+                                    <select name="strategic_01" id="strategic_01">
+                                        <option value="1">1. ยุทศาสตร์ความเข้มแข็งภาคเกษตร</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="strategic_02">เป้าประสงค์</label>
+                                    <select name="strategic_02" id="strategic_02">
+                                        <option value="1">1.1 ยุทศาสตร์ความเข้มแข็งภาคเกษตร</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="strategic_03">กลยุทธ์</label>
+                                    <select name="strategic_03" id="strategic_03">
+                                        <option value="1">1.1.1 ยุทศาสตร์ความเข้มแข็งภาคเกษตร</option>
+                                    </select>
+                                </p>
+                            </dd>
+
+                            <dt>ยุทธศาสตร์การวิจัยของชาติ</dt>
+                            <dd>
+                                <p>
+                                    <label for="strategic_04">ยุทธศาสตร์</label>
+                                    <select name="strategic_04" id="strategic_04">
+                                        <option value="1">1. ยุทศาสตร์ความเข้มแข็งภาคเกษตร</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="strategic_05">กลยุทธ์</label>
+                                    <select name="strategic_05" id="strategic_05">
+                                        <option value="1">1.1 ยุทศาสตร์ความเข้มแข็งภาคเกษตร</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="strategic_06">แผน</label>
+                                    <select name="strategic_06" id="strategic_06">
+                                        <option value="1">1.1.1 ยุทศาสตร์ความเข้มแข็งภาคเกษตร</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="strategic_06">เรื่องเร่งด่วน</label>
+                                    <select name="strategic_06" id="strategic_06">
+                                        <option value="1">-</option>
+                                    </select> <br>
+                                    <em>กรณีที่ไม่เข้ากับกลุ่มเรื่องเร่งด่วนใดๆ ให้เลือก "-"</em>
+                                </p>
+                            </dd>
+
+                            <dt>นโยบายของรัฐบาล</dt>
+                            <dd>
+                                <p>
+                                    <label for="strategic_07">นโยบายเร่งด่วนของรัฐบาล</label>
+                                    <select name="strategic_07" id="strategic_07">
+                                        <option value="1">10. ส่งเสริมให้ประชาชนเข้าถึงแหล่งเงินทุน</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="strategic_08">นโยบายเร่งด่วนของรัฐบาล</label>
+                                    <select name="strategic_08" id="strategic_08">
+                                        <option value="1">4. นโยบายที่ดิน ทรัพยากรธรรมชาติและสิ่งแวดล้อม</option>
+                                    </select>
+                                </p>
+                            </dd>
+                        </dl>
                     </section>
 
-                    <section class="head">
-                        <div>
-                            <h3>สถานภาพโครงการวิจัย</h3>
-                        </div>
-                        <div>
-                            <h3>ประเภทโครงการวิจัย</h3>
-                        </div>
+                    <section class="head form_control">
+                        <h3>สถานภาพโครงการวิจัย</h3>
+                        <ul class="radio">
+                            <li><input type="radio" name="strategic_09" id="strategic_09-1"> <label for="strategic_09-1"><strong>ใหม่</strong></label></li>
+                            <li>
+                                <input type="radio" name="strategic_09" id="strategic_09-2"> <label for="strategic_09-2"><strong>ต่อเนื่อง</strong></label>
+                                <ul class="text">
+                                    <li>
+                                        <label for="strategic_09-2-1">รหัสข้อเสนอโครงการต่อเนื่องปีก่อนหน้า</label>
+                                        <input type="text" name="strategic_09-2-1" id="strategic_09-2-1"> <br>
+                                        <em>กรุณากรอกเพื่อยืนยันความถูกต้องความต่อเนื่องของโครงการ</em>
+                                    </li>
+                                    <li>
+                                        <label for="strategic_09-2-2">ID ของโครงการต่อเนื่องปีก่อนหน้า</label>
+                                        <input type="text" name="strategic_09-2-2" id="strategic_09-2-2">
+                                    </li>
+                                    <li class="right">
+                                        <button type="submit">ตรวจสอบ</button> <button>บันทึก</button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <dl>
+                            <dt>ลักษณะโครงการ</dt>
+                            <dd>
+                                <ul class="radio">
+                                    <li>
+                                        <input type="radio" name="strategic_10" id="strategic_10">
+                                        <label for="strategic_10">โครงการสิ้นสุดในปีงบประมาณ</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="strategic_11" id="strategic_11">
+                                        <label for="strategic_11">โครงการลักษณะต่อเนื่อง</label>
+                                        <ul class="text">
+                                            <li>
+                                                <label for="strategic_11-1">ความต่องเนื่อง ปีที่ </label>
+                                                <input type="text" name="strategic_11-1" id="strategic_11-1">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <h3>ประเภทโครงการวิจัย</h3>
+                        <p>
+                            <label for="strategic_12">ประเภทโครงการวิจัย</label>
+                            <textarea name="strategic_12" id="strategic_12" cols="30" rows="10"></textarea>
+                        </p>
                     </section>
 
-                    <section class="head">
+                    <section class="head form_control">
                         <h3>ชื่องานวิจัย</h3>
+                        <p>
+                            <label for="strategic_13">ชื่องานวิจัยในภาษาไทย</label>
+                            <textarea name="strategic_13" id="strategic_13" cols="30" rows="10"></textarea>
+                        </p>
+                        <p>
+                            <label for="strategic_14">ชื่องานวิจัยในภาษา English</label>
+                            <textarea name="strategic_14" id="strategic_14" cols="30" rows="10"></textarea>
+                        </p>
                     </section>
 
-                    <section class="head">
+                    <section class="head form_control">
                         <h3>ระยะเวลาในการทำวิจัย</h3>
+                        <p class="number">
+                            <label for="strategic_15">ระยะเวลาในการทำวิจัยตลอดโครงการ</label>
+                            <input type="text" name="strategic_15" id="strategic_15"> <label for="strategic_15">ปี</label>
+                            <input type="text" name="strategic_16" id="strategic_16"> <label for="strategic_16">เดือน</label>
+                        </p>
+                        <p class="date">
+                            <label for="strategic_17">ตั้งแต่วันที่</label>
+                            <input type="date" name="strategic_17" id="strategic_17" placeholder="1/10/2558">
+                            <label for="strategic_18">ถึงวันที่</label>
+                            <input type="date" name="strategic_18" id="strategic_18" placeholder="30/09/2559"> <br>
+                            <em>กรุณากรอกวันที่ในรูปแบบ dd/mm/yyyy เช่น 1/9/2549</em>
+                        </p>
                     </section>
 
-                    <section class="head">
-                        <div>
-                            <h3>งบประมาณในการทำวิจัย</h3>
-                        </div>
-                        <div>
-                            <h3>ประเภทการวิจัย</h3>
-                        </div>
+                    <section class="head form_control">
+                        <h3>งบประมาณในการทำวิจัย</h3>
+                        <p>
+                            <label for="strategic_19">งบประมาณเฉพาะปีที่เสนอขอ</label>
+                            <input type="text" name="strategic_19" id="strategic_19" placeholder="0.00" class="money"> <label for="strategic_19">บาท</label>
+                        </p>
+                        <p>
+                            <label for="strategic_20">งบบริหารแผนงานวิจัย</label>
+                            <input type="text" name="strategic_20" id="strategic_20" placeholder="0.00" class="money"> <label for="strategic_20">บาท</label> <br>
+                            <em>กรอกเฉพาะกรณีแผนงาน/ชุดโครงการ</em>
+                        </p>
+                        <p>
+                            <label for="strategic_25">งบประมาณที่ได้รับจัดสรร</label>
+                            <input type="text" name="strategic_25" id="strategic_25" placeholder="0.00" class="money"> <label for="strategic_25">บาท</label> <br>
+                            <em>กรอกเฉพาะโครงการต่อเนื่อง</em>
+                        </p>
+
+                        <h3>ประเภทการวิจัย</h3>
+                        <p>
+                            <label for="strategic_21">ประเภทการวิจัย</label>
+                            <select name="strategic_21" id="strategic_21">
+                                <option value="strategic_21">การวิจัยพื้นฐาน</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="strategic_22">สาขาวิชาการ</label>
+                            <select name="strategic_22" id="strategic_22">
+                                <option value="">สาขาวิทยาศาสตร์กายภาพ</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="strategic_23">ด้านการวิจัย</label>
+                            <select name="strategic_23" id="strategic_23">
+                                <option value="">ด้านการเกษตร</option>
+                            </select>
+                        </p>
                     </section>
 
-                    <section class="head">
+                    <section class="head form_control">
                         <h3>คำสำคัญ (Keyword)</h3>
+                        <p>
+                            <label for="strategic_24">คำสำคัญ</label>
+                            <textarea name="strategic_24" id="strategic_24" cols="30" rows="10"></textarea>
+                        </p>
                     </section>
 
-                    <section class="head">
+                    <section class="head form_control">
                         <h3>ความสำคัญและที่มา, วัตถุประสงค์, ประโยชน์ที่คาดว่าจะได้้รับ และแนวทางการดำเนินการ</h3>
+                        <dl>
+                            <dt>ความสำคัญและที่มาของปัญหาที่ทำการวิจัย</dt>
+                            <dd>
+                                <p>
+                                    <textarea name="strategic_25" id="strategic_25" cols="30" rows="10" class="editor"></textarea>
+                                </p>
+                            </dd>
+                            <dt>วัตถุประสงค์</dt>
+                            <dd>
+                                <p>
+                                    <textarea name="strategic_26" id="strategic_26" cols="30" rows="10" class="editor"></textarea> <br>
+                                    <em>จะใช้แสดงในรายงานความก้าวหน้า และแสดงในรายงานสำหรับผู้ทรงคุณวุฒิเพื่อพิจารณาข้อเสนอโครงการ</em>
+                                </p>
+                            </dd>
+
+                            <dt>ประโยชน์ที่คาดว่าจะได้รับ</dt>
+                            <dd>
+                                <p>
+                                    <textarea name="strategic_27" id="strategic_27" cols="30" rows="10" class="editor"></textarea>
+                                </p>
+                            </dd>
+                        </dl>
                     </section>
 
-                    <section class="head">
+                    <section class="head form_control">
                         <h3>ข้อมูลเพิ่มเติมอื่นๆ</h3>
+                        <dl>
+                            <dt>เลขที่สัญญาและรหัสโครงการ</dt>
+                            <dd>
+                                <p>
+                                    <label for="strategic_28">เลขที่สัญญา</label>
+                                    <input type="text" name="strategic_28" id="strategic_28">
+                                </p>
+                                <p>
+                                    <label for="strategic_29">รหัสโครงการ 1</label>
+                                    <input type="text" name="strategic_29" id="strategic_29">
+                                </p>
+                                <p>
+                                    <label for="strategic_30">รหัสโครงการ 2</label>
+                                    <input type="text" name="strategic_30" id="strategic_30">
+                                </p>
+                                <p>
+                                    <label for="strategic_31">รหัสโครงการ 3</label>
+                                    <input type="text" name="strategic_31" id="strategic_31">
+                                </p>
+                            </dd>
+
+                            <dt>หมายเหตุ</dt>
+                            <dd>
+                                <p>
+                                    <label for="strategic_32">เหตุผลในกรณีที่มีการเปลี่ยนแปลง &nbsp;&nbsp;&nbsp;<br>รายละเอียดโครงการ</label>
+                                    <textarea name="strategic_32" id="strategic_32" cols="30" rows="10"></textarea>
+                                </p>
+                                <p>
+                                    <label for="strategic_33">หมายเหตุอื่นๆ</label>
+                                    <textarea name="strategic_33" id="strategic_33" cols="30" rows="10"></textarea>
+                                </p>
+                                <p>
+                                    <label for="strategic_34">หมายเหตุสำหรับเพิ่มใน Log</label>
+                                    <textarea name="strategic_34" id="strategic_34" cols="30" rows="10"></textarea>
+                                </p>
+                            </dd>
+                        </dl>
                     </section>
 
-                    <p>
+                    <p class="right">
                         <button>&lt;&lt; ย้อนกลับ</button> <button>บันทึก &gt;&gt;</button>
                     </p>
                 </div>

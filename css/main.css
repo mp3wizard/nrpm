@@ -1844,9 +1844,10 @@ main {
     main > article:last-child {
       margin-right: 0; }
 
-nav ul {
+nav ul, nav ol {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  list-style: none; }
 
 aside {
   border-radius: 10px;
@@ -1879,10 +1880,6 @@ aside {
     font-size: 14px;
     background: url("../img/bullet-nav.png") no-repeat 15px 7px;
     padding-left: 30px; }
-  aside ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; }
 
 #step li a {
   background: none; }
@@ -2795,13 +2792,13 @@ h3.orange {
   background-color: #ffcd8c; }
 
 /* Form Control */
-.form_control p {
+.form_control p, .form_control li {
   line-height: 24px;
   font-size: 12px; }
-  .form_control p.right input[type="text"], .form_control p.right input[type="date"], .form_control p.right input[type="phone"], .form_control p.right input[type="number"] {
+  .form_control p.right input[type="text"], .form_control p.right input[type="date"], .form_control p.right input[type="phone"], .form_control p.right input[type="number"], .form_control li.right input[type="text"], .form_control li.right input[type="date"], .form_control li.right input[type="phone"], .form_control li.right input[type="number"] {
     display: inline-block;
     float: none; }
-  .form_control p label:first-child, .form_control p label:nth-child(3) {
+  .form_control p label:first-child, .form_control p label:nth-child(3), .form_control li label:first-child, .form_control li label:nth-child(3) {
     text-align: right;
     float: left;
     display: block;
@@ -2809,19 +2806,19 @@ h3.orange {
     width: 23.23176%;
     white-space: nowrap;
     vertical-align: top; }
-    .form_control p label:first-child:last-child, .form_control p label:nth-child(3):last-child {
+    .form_control p label:first-child:last-child, .form_control p label:nth-child(3):last-child, .form_control li label:first-child:last-child, .form_control li label:nth-child(3):last-child {
       margin-right: 0; }
-    .form_control p label:first-child:after, .form_control p label:nth-child(3):after {
+    .form_control p label:first-child:after, .form_control p label:nth-child(3):after, .form_control li label:first-child:after, .form_control li label:nth-child(3):after {
       content: ':';
       display: inline-block;
       margin: 0 5px; }
-  .form_control p input[type="radio"] ~ label, .form_control p input[type="checkbox"] ~ label {
+  .form_control p input[type="radio"] ~ label, .form_control p input[type="checkbox"] ~ label, .form_control li input[type="radio"] ~ label, .form_control li input[type="checkbox"] ~ label {
     width: auto;
     white-space: nowrap;
     margin-right: 20px; }
-    .form_control p input[type="radio"] ~ label:after, .form_control p input[type="checkbox"] ~ label:after {
+    .form_control p input[type="radio"] ~ label:after, .form_control p input[type="checkbox"] ~ label:after, .form_control li input[type="radio"] ~ label:after, .form_control li input[type="checkbox"] ~ label:after {
       display: none; }
-  .form_control p input[type="text"], .form_control p input[type="date"], .form_control p input[type="phone"], .form_control p input[type="number"] {
+  .form_control p input[type="text"], .form_control p input[type="date"], .form_control p input[type="phone"], .form_control p input[type="number"], .form_control li input[type="text"], .form_control li input[type="date"], .form_control li input[type="phone"], .form_control li input[type="number"] {
     border: solid 1px #ccc;
     height: 24px;
     padding: 0 5px;
@@ -2830,9 +2827,9 @@ h3.orange {
     margin-right: 2.35765%;
     width: 40.29137%;
     font-size: 12px; }
-    .form_control p input[type="text"]:last-child, .form_control p input[type="date"]:last-child, .form_control p input[type="phone"]:last-child, .form_control p input[type="number"]:last-child {
+    .form_control p input[type="text"]:last-child, .form_control p input[type="date"]:last-child, .form_control p input[type="phone"]:last-child, .form_control p input[type="number"]:last-child, .form_control li input[type="text"]:last-child, .form_control li input[type="date"]:last-child, .form_control li input[type="phone"]:last-child, .form_control li input[type="number"]:last-child {
       margin-right: 0; }
-  .form_control p textarea {
+  .form_control p textarea, .form_control li textarea {
     padding: 5px 10px;
     border: solid 1px #ccc;
     font-family: tahoma;
@@ -2843,9 +2840,17 @@ h3.orange {
     height: 100px;
     resize: none;
     font-size: 13px; }
-    .form_control p textarea:last-child {
+    .form_control p textarea:last-child, .form_control li textarea:last-child {
       margin-right: 0; }
-  .form_control p select {
+    .form_control p textarea.full, .form_control li textarea.full {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 91.4702%;
+      margin-left: 4.2649%; }
+      .form_control p textarea.full:last-child, .form_control li textarea.full:last-child {
+        margin-right: 0; }
+  .form_control p select, .form_control li select {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -2853,7 +2858,7 @@ h3.orange {
     height: 24px;
     position: relative;
     top: 2px; }
-    .form_control p select:last-child {
+    .form_control p select:last-child, .form_control li select:last-child {
       margin-right: 0; }
 .form_control .radio {
   list-style: none;
@@ -2862,6 +2867,10 @@ h3.orange {
     font-size: 13px; }
   .form_control .radio li {
     margin-bottom: 10px; }
+.form_control .text {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 25px; }
 .form_control dl {
   margin: 20px; }
 .form_control dt {
@@ -2983,6 +2992,92 @@ div.bg {
   background-color: #fff;
   padding: 20px 10px; }
 
+.head dl, .head ul, .head p {
+  padding-left: 30px; }
+  .head dl label:first-child, .head ul label:first-child, .head p label:first-child {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .head dl label:first-child:last-child, .head ul label:first-child:last-child, .head p label:first-child:last-child {
+      margin-right: 0; }
+.head dl {
+  margin: 0 0 30px 0; }
+  .head dl .radio {
+    padding: 0; }
+  .head dl p {
+    padding-left: 0; }
+.head dt {
+  font-weight: bold;
+  margin-bottom: 5px; }
+.head dd {
+  margin: 0 0 30px 0;
+  padding: 0; }
+.head em {
+  color: #e74c3c;
+  font-style: normal;
+  margin-left: 34.11922%; }
+.head .radio {
+  padding-left: 30px; }
+.head .text label:first-child {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  .head .text label:first-child:last-child {
+    margin-right: 0; }
+.head .text input[type="text"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 21.95229%; }
+  .head .text input[type="text"]:last-child {
+    margin-right: 0; }
+.head .text em {
+  margin-left: 42.64902%; }
+.head li.right {
+  text-align: right;
+  padding-right: 4.95%; }
+.head input[type="text"] ~ label, .head input[type="date"] ~ label {
+  float: left;
+  width: auto; }
+  .head input[type="text"] ~ label:after, .head input[type="date"] ~ label:after {
+    display: none; }
+.head .number input[type="text"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%; }
+  .head .number input[type="text"]:last-child {
+    margin-right: 0; }
+.head .date input[type="date"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .head .date input[type="date"]:last-child {
+    margin-right: 0; }
+.head .money {
+  text-align: right; }
+.head .editor {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 95.7351%; }
+  .head .editor:last-child {
+    margin-right: 0; }
+.head br {
+  clear: both; }
+.head .editor ~ em {
+  margin-left: 0%; }
+
+.right {
+  text-align: right; }
+
+.form_control.bg h3 {
+  margin-left: 0;
+  margin-right: 0; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -3052,27 +3147,28 @@ div.bg {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before, main:before, .tabs .ui-tabs-nav:before, .register p:before, .send_agreement section p:before, .send_agreement section ul li:before, .form_control p:before,
+.clearfix:before, main:before, .tabs .ui-tabs-nav:before, .register p:before, .send_agreement section p:before, .send_agreement section ul li:before, .form_control p:before, .form_control li:before,
 .clearfix:after,
 main:after,
 .tabs .ui-tabs-nav:after,
 .register p:after,
 .send_agreement section p:after,
 .send_agreement section ul li:after,
-.form_control p:after {
+.form_control p:after,
+.form_control li:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after, main:after, .tabs .ui-tabs-nav:after, .register p:after, .send_agreement section p:after, .send_agreement section ul li:after, .form_control p:after {
+.clearfix:after, main:after, .tabs .ui-tabs-nav:after, .register p:after, .send_agreement section p:after, .send_agreement section ul li:after, .form_control p:after, .form_control li:after {
   clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.clearfix, main, .tabs .ui-tabs-nav, .register p, .send_agreement section p, .send_agreement section ul li, .form_control p {
+.clearfix, main, .tabs .ui-tabs-nav, .register p, .send_agreement section p, .send_agreement section ul li, .form_control p, .form_control li {
   *zoom: 1; }
 
 /* ==========================================================================

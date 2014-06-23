@@ -3070,13 +3070,38 @@ div.bg {
   clear: both; }
 .head .editor ~ em {
   margin-left: 0%; }
+.head .checkbox {
+  list-style: none;
+  margin-left: 17.05961%;
+  margin-bottom: 30px; }
+.head .col4 li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .head .col4 li:last-child {
+    margin-right: 0; }
+  .head .col4 li:nth-child(3n) {
+    margin-right: 0; }
+  .head .col4 li:nth-child(3n+1) {
+    clear: left; }
+.head .label6 label:first-child {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  .head .label6 label:first-child:last-child {
+    margin-right: 0; }
+.head .label6 .editor {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%; }
+  .head .label6 .editor:last-child {
+    margin-right: 0; }
 
 .right {
   text-align: right; }
-
-.form_control.bg h3 {
-  margin-left: 0;
-  margin-right: 0; }
 
 /* ==========================================================================
    Helper classes
@@ -3147,7 +3172,7 @@ div.bg {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before, main:before, .tabs .ui-tabs-nav:before, .register p:before, .send_agreement section p:before, .send_agreement section ul li:before, .form_control p:before, .form_control li:before,
+.clearfix:before, main:before, .tabs .ui-tabs-nav:before, .register p:before, .send_agreement section p:before, .send_agreement section ul li:before, .form_control p:before, .form_control li:before, .head .checkbox:before,
 .clearfix:after,
 main:after,
 .tabs .ui-tabs-nav:after,
@@ -3155,20 +3180,21 @@ main:after,
 .send_agreement section p:after,
 .send_agreement section ul li:after,
 .form_control p:after,
-.form_control li:after {
+.form_control li:after,
+.head .checkbox:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after, main:after, .tabs .ui-tabs-nav:after, .register p:after, .send_agreement section p:after, .send_agreement section ul li:after, .form_control p:after, .form_control li:after {
+.clearfix:after, main:after, .tabs .ui-tabs-nav:after, .register p:after, .send_agreement section p:after, .send_agreement section ul li:after, .form_control p:after, .form_control li:after, .head .checkbox:after {
   clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.clearfix, main, .tabs .ui-tabs-nav, .register p, .send_agreement section p, .send_agreement section ul li, .form_control p, .form_control li {
+.clearfix, main, .tabs .ui-tabs-nav, .register p, .send_agreement section p, .send_agreement section ul li, .form_control p, .form_control li, .head .checkbox {
   *zoom: 1; }
 
 /* ==========================================================================

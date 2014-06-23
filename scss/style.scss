@@ -561,8 +561,14 @@ div.bg { background: #fff; padding: 20px 10px; margin-top: -15px; }
   .editor { @include span-columns(11.5); }
   br { clear: both; }
   .editor ~ em { @include shift(0); }
+
+  .checkbox { list-style: none; @include shift(2); margin-bottom: 30px; @extend .clearfix;}
+  .col4 {
+    li { @include span-columns(4); @include omega(3n); }
+  }
+  .label6 {
+    label:first-child { @include span-columns(2); }
+    .editor { @include span-columns(10); }
+  }
 }
-.right { text-align: right; }
-.form_control.bg { 
-  h3 { margin-left: 0; margin-right: 0; }
-}
+.right { text-align: right;  }

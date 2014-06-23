@@ -2103,7 +2103,7 @@ table.number tbody tr > td:first-child:before {
     width: 35%; }
   .type5 tbody tr td:last-child {
     white-space: nowrap;
-    text-align: right; }
+    text-align: center; }
   .type5 a {
     font-size: 1.4em;
     margin-right: 5px;
@@ -2127,9 +2127,9 @@ table.number tbody tr > td:first-child:before {
     padding: 0 5px;
     font-size: 1.3em; }
 
-.type8 {
+.type8, .type19 {
   margin: 30px 0; }
-  .type8 tbody tr td:nth-child(1) {
+  .type8 tbody tr td:nth-child(1), .type19 tbody tr td:nth-child(1) {
     text-align: left;
     padding: 20px 20px;
     background-color: #fff;
@@ -2230,6 +2230,26 @@ table.number tbody tr > td:first-child:before {
   width: 20%; }
 .type17 thead tr th:nth-child(4) {
   width: 15%; }
+
+.type18 thead tr th:nth-child(1) {
+  width: 35%; }
+.type18 thead tr th:nth-child(2) {
+  width: 50%; }
+.type18 tbody tr td {
+  vertical-align: middle; }
+.type18 tbody tr td:nth-child(2) {
+  text-align: left;
+  padding: 0 20px; }
+.type18 tbody tr td:last-child a {
+  font-size: 1.5em;
+  padding: 0 10px; }
+.type18 tbody tr select {
+  width: 80%; }
+
+.type19 {
+  margin: 10px 0; }
+  .type19 em {
+    margin-left: 0 !important; }
 
 .tabs {
   position: relative;
@@ -2792,6 +2812,8 @@ h3.orange {
   background-color: #ffcd8c; }
 
 /* Form Control */
+.form_control section.table {
+  margin-bottom: 20px; }
 .form_control p, .form_control li {
   line-height: 24px;
   font-size: 12px; }
@@ -3099,6 +3121,23 @@ div.bg {
   width: 82.94039%; }
   .head .label6 .editor:last-child {
     margin-right: 0; }
+.head .label7 label:first-child {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .head .label7 label:first-child:last-child {
+    margin-right: 0; }
+.head .label7 select {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 10.43705%;
+  text-align: center; }
+  .head .label7 select:last-child {
+    margin-right: 0; }
+.head .label7 .right {
+  padding-right: 32.7%; }
 
 .right {
   text-align: right; }

@@ -54,8 +54,8 @@
                             <ol>
                                 <li class="inactive"><a href="page7.html">รายละเอียดโครงการ</a></li>
                                 <li class="inactive"><a href="page7_2.html">ข้อมูลนักวิจัย</a></li>
-                                <li class="active"><a href="page7_3.html">ผลสำเร็จ</a></li>
-                                <li class="inactive"><a href="page7_4.html">ไฟล์แนบ</a></li>
+                                <li class="inactive"><a href="page7_3.html">ผลสำเร็จ</a></li>
+                                <li class="active"><a href="page7_4.html">ไฟล์แนบ</a></li>
                                 <li class="inactive"><a href="page7_5.html">ข้อมูลเพิ่มเติม</a></li>
                             </ol>
                         </dd>
@@ -64,59 +64,82 @@
             </aside>
 
             <article>
-                <h2 class="breadcumb"><a href="#">ส่งงานวิจัย</a> ข้อมูลเพิ่มเติม</h2>
-                <div class="bg head">
+                <h2 class="breadcumb"><a href="#">ส่งงานวิจัย</a> ไฟล์แนบ</h2>
+                <div class="bg head form_control">
                     <form action="">
-                        <section class="form_control label7">
-                            <h3>ข้อมูลผลสำเร็จ</h3>
-                            <p>
-                                <label for="success_01">ปี</label>
-                                <select name="success_01" id="success_01">
-                                    <option value="">2558</option>
-                                </select>
-                            </p>
-
-                            <p>
-                                <label for="success_02">ประเภทของผลสำเร็จ</label>
-                                <select name="success_02" id="success_02">
-                                    <option value="">P</option>
-                                    <option value="">I</option>
-                                    <option value="">G</option>
-                                </select>
-                            </p>
-
-                            <p>
-                                <label for="success_03">ผลสำเร็จที่คาดว่าจะได้รับ</label>
-                                <textarea name="success_03" id="success_03" cols="30" rows="10"></textarea>
-                            </p>
-
-                            <p class="right">
-                                <button type="submit">บันทึก</button> <button type="reset">ยกเลิก</button>
-                            </p>
-                        </section>
                         <section class="table">
-                            <table class="type20">
-                                <caption class="blue">ผลสำเร็จที่คาดว่าจะได้รับ</caption>
-                                <thead>
-                                    <tr>
-                                        <th>ปี</th>
-                                        <th>ผลสำเร็จที่คาดว่าจะได้รับ</th>
-                                        <th>ประเภท</th>
-                                        <th>&nbsp;</th>
-                                    </tr>
-                                </thead>
+                            <table class="type19">
+                                <caption class="blue">เลือกไฟล์ที่ต้องการแนบ</caption>
                                 <tbody>
                                     <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>
+                                            <input type="file" name="file" id="file">
+                                            <select name="" id="">
+                                                <option value="">ประเภทไฟล์เอกสาร</option>
+                                            </select>
+                                            <input type="submit" value="แนบไฟล์" class="button"> <br><br>
+
+                                            <em>ไฟล์แนบต้องมีขนาดไม่เกิน 20 MB สามารถแนบไฟล์ได้มากกว่า 1 ไฟล์</em>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </section>
                         <p class="right">
-                            <button>&lt;&lt; ย้อนกลับ</button> <button type="submit">บันทึก &gt;&gt;</button>
+                            <input type="submit" value="บันทึก" class="button">
+                            <input type="reset" value="ยกเลิก" class="button">
+                        </p>
+
+                        <br>
+
+                        <section class="table">
+                            <table class="type5">
+                                <caption class="blue">ไฟล์ข้อมูลโครงการ</caption>
+                                <thead>
+                                    <tr>
+                                        <th>ชื่อไฟล์</th>
+                                        <th>ประเภท</th>
+                                        <th>วันที่แนบ</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>researchfile.docx</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">ประเภทเอกสาร</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            01/05/2557
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-pencil"></i></a>
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>researchfile2.docx</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">ประเภทเอกสาร</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            01/05/2557
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-pencil"></i></a>
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+
+                        <p class="right">
+                            <button>&lt;&lt; ย้อนกลับ</button> <button>บันทึก &gt;&gt;</button>
                         </p>
                     </form>
                 </div>

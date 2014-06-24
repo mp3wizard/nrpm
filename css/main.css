@@ -1848,6 +1848,47 @@ nav ul, nav ol {
   margin: 0;
   padding: 0;
   list-style: none; }
+nav ol li {
+  counter-increment: step-count;
+  margin-bottom: 10px;
+  position: relative; }
+  nav ol li a {
+    padding-left: 0;
+    line-height: 30px;
+    font-size: 13px; }
+  nav ol li a:before {
+    content: counter(step-count);
+    display: inline-block;
+    text-align: right;
+    margin-right: 5px;
+    background-color: #2183c3;
+    color: #fff;
+    padding: 0 10px 0 35px;
+    border: solid 1px #136aa1;
+    font-weight: bold; }
+  nav ol li:last-child {
+    border-top: solid 2px #136aa1; }
+    nav ol li:last-child:before {
+      display: none; }
+    nav ol li:last-child a:before {
+      display: none; }
+    nav ol li:last-child a {
+      font-weight: bold;
+      text-align: center;
+      display: block; }
+nav ol li:before {
+  color: #fff;
+  position: absolute;
+  font-size: 2em;
+  top: -5px;
+  left: 2px;
+  font-family: 'FontAwesome'; }
+nav ol li.active:before {
+  content: '\f00c'; }
+nav ol li.inactive:before {
+  content: '\f00d';
+  left: 7px;
+  color: #79b4db; }
 
 aside {
   border-radius: 10px;
@@ -1977,6 +2018,10 @@ section.table:after {
     color: #3b79a0; }
 .table tr > th:last-child, .table tr > td:last-child {
   border-right: none; }
+  .table tr > th:last-child a, .table tr > td:last-child a {
+    font-size: 1.5em;
+    padding: 0 5px;
+    display: inline-block; }
 .table tbody tr:nth-child(2n) td {
   background-color: #fff; }
 .table caption {
@@ -2250,6 +2295,14 @@ table.number tbody tr > td:first-child:before {
   margin: 10px 0; }
   .type19 em {
     margin-left: 0 !important; }
+
+.type20 thead tr th:nth-child(1) {
+  width: 50px; }
+.type20 tbody tr td {
+  vertical-align: middle; }
+.type20 tbody tr td:nth-child(2) {
+  text-align: left;
+  width: 480px; }
 
 .tabs {
   position: relative;

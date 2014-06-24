@@ -57,6 +57,20 @@ main { padding: 20px 15px 100px; @extend .clearfix; background: #fff url('../img
 
 nav {
   ul, ol { margin: 0; padding: 0; list-style: none; }
+  ol {
+    li { counter-increment: step-count; margin-bottom: 10px; position: relative;
+      a { padding-left: 0; line-height: 30px; font-size: 13px; }
+      a:before { content: counter(step-count); display: inline-block; text-align: right; margin-right: 5px; background-color: #2183c3; color: #fff; padding: 0 10px 0 35px; border: solid 1px #136aa1; font-weight: bold; }
+      &:last-child { border-top: solid 2px #136aa1;
+        &:before { display: none; }
+        a:before { display: none; }
+        a { font-weight: bold; text-align: center; display: block; }
+      }
+    }
+    li:before { color: #fff; position: absolute; font-size: 2em; top: -5px; left: 2px; font-family: 'FontAwesome'; }
+    li.active:before { content: '\f00c';  }
+    li.inactive:before { content: '\f00d'; left: 7px; color: #79b4db; }
+  }
 }
 
 aside { border-radius: 10px;  border-right: solid 1px #a19c95; border-bottom: solid 1px #a19c95; box-shadow: 0 5px 5px rgba(0,0,0,.6); min-height: 220px;
@@ -102,7 +116,9 @@ section.table:after { content:'';  height: 1px; position: absolute; box-shadow: 
       &:hover { color: lighten($blue, 10%);}
     }
   }
-  tr>th:last-child, tr>td:last-child { border-right: none; }
+  tr>th:last-child, tr>td:last-child { border-right: none;
+    a { font-size: 1.5em; padding: 0 5px; display: inline-block; }
+  }
   tbody tr:nth-child(2n) td { background-color: #fff; }
 
   caption { height: 26px; line-height: 22px; border-radius: 5px 5px 0 0; color: #0d2a47; font-size: 13px; text-align: left; padding-left: 10px;
@@ -280,8 +296,17 @@ table.number {
     select { width: 80%; }
   }
 }
-.type19 { margin: 10px 0; 
+.type19 { margin: 10px 0;
   em { margin-left: 0!important; }
+}
+.type20 {
+  thead tr { 
+    th:nth-child(1) { width: 50px; }
+  }
+    tbody tr {
+      td {  vertical-align: middle; }
+      td:nth-child(2) { text-align: left; width: 480px; }
+    }
 }
 
 .tabs { position: relative; z-index: 2; margin-bottom: 0;

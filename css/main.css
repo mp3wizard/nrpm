@@ -3195,6 +3195,94 @@ div.bg {
 .right {
   text-align: right; }
 
+.recheck .col3 span {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .recheck .col3 span:last-child {
+    margin-right: 0; }
+.recheck .col2 span {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .recheck .col2 span:last-child {
+    margin-right: 0; }
+.recheck section {
+  padding: 10px;
+  border: solid 1px #999; }
+.recheck section.table {
+  padding: 0;
+  border: none; }
+  .recheck section.table:after {
+    display: none; }
+  .recheck section.table th, .recheck section.table td {
+    border-right: solid 1px #eee;
+    padding: 5px 10px; }
+  .recheck section.table td {
+    color: #2d5d7b;
+    background-color: #fff;
+    border-top: solid 1px #eee; }
+  .recheck section.table th {
+    background-color: #eee;
+    font-weight: bold;
+    color: #333; }
+.recheck p {
+  margin: 0;
+  font-size: 13px; }
+  .recheck p label:first-child {
+    text-align: left;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 16.40792%; }
+    .recheck p label:first-child:last-child {
+      margin-right: 0; }
+  .recheck p cite {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 81.23443%;
+    font-style: normal; }
+    .recheck p cite:last-child {
+      margin-right: 0; }
+.recheck h3 {
+  font-family: tahoma;
+  font-size: 16px; }
+.recheck h4 {
+  margin-bottom: 5px; }
+.recheck .u {
+  text-decoration: underline; }
+.recheck em {
+  font-style: normal;
+  font-weight: bold; }
+  .recheck em.blue {
+    color: blue; }
+  .recheck em.green {
+    color: #257b4f; }
+.recheck .label8 p label:first-child {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .recheck .label8 p label:first-child:last-child {
+    margin-right: 0; }
+.recheck .label8 cite {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+  .recheck .label8 cite:last-child {
+    margin-right: 0; }
+.recheck .type21 thead tr th {
+  width: 15%;
+  white-space: normal; }
+.recheck .type21 thead tr th:first-child {
+  width: 55%; }
+.recheck .type21 tbody tr td:first-child, .recheck .type21 tbody tr td:nth-child(3) {
+  text-align: left; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

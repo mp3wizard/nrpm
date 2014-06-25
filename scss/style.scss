@@ -23,6 +23,7 @@
 $white: #f2f2f2;
 $blue: #2d5d7b;
 $brown: #744400;
+$green: #257b4f;
 $bgTD: #eff3fc;
 $font_th: 'TH Chakra Petch';
 $alizarin: #e74c3c;
@@ -300,7 +301,7 @@ table.number {
   em { margin-left: 0!important; }
 }
 .type20 {
-  thead tr { 
+  thead tr {
     th:nth-child(1) { width: 50px; }
   }
     tbody tr {
@@ -620,4 +621,47 @@ div.bg { background: #fff; padding: 20px 10px; margin-top: -15px; }
     .right { padding-right: 32.7%; }
   }
 }
+
+
+
 .right { text-align: right;  }
+
+.recheck {
+  .col3 {
+    span { @include span-columns(4); }
+  }
+  .col2 {
+    span { @include span-columns(6); }
+  }
+  section { padding: 10px; border: solid 1px #999; }
+  section.table { padding: 0; border: none; 
+    &:after { display: none; }
+    th, td { border-right: solid 1px #eee; padding: 5px 10px; }
+    td { color: $blue;  background-color: #fff; border-top: solid 1px #eee;}
+    th { background-color: #eee; font-weight: bold; color: #333; }
+  }
+  p { margin: 0; font-size: 13px;
+    label:first-child { text-align: left; @include span-columns(2.2);  }
+    cite { @include span-columns(9.8); font-style: normal; }
+  }
+  h3 { font-family: tahoma; font-size: 16px; }
+  h4 { margin-bottom: 5px; }
+  .u { text-decoration: underline; }
+  em { font-style: normal; font-weight: bold; 
+    &.blue { color: blue; }
+    &.green { color: $green; }
+  }
+  .label8 {
+    p label:first-child { @include span-columns(3); }
+    cite { @include span-columns(9); }
+  }
+  .type21 { 
+    thead tr { 
+      th { width: 15%; white-space: normal; }
+      th:first-child { width: 55%; }
+    }
+    tbody tr {
+      td:first-child, td:nth-child(3) { text-align: left; }
+    }
+  }
+}

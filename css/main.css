@@ -3195,93 +3195,150 @@ div.bg {
 .right {
   text-align: right; }
 
-.recheck .col3 span {
+.recheck {
+  margin-top: 0 !important; }
+  .recheck h3 {
+    font-family: tahoma;
+    font-size: 16px; }
+
+.recheck section input {
+  width: auto !important;
+  height: auto !important;
+  line-height: 20px; }
+.recheck section .col3 span {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%; }
-  .recheck .col3 span:last-child {
+  .recheck section .col3 span:last-child {
     margin-right: 0; }
-.recheck .col2 span {
+  .recheck section .col3 span:nth-child(3n) {
+    margin-right: 0; }
+  .recheck section .col3 span:nth-child(3n+1) {
+    clear: left; }
+.recheck section .col2 span {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%; }
-  .recheck .col2 span:last-child {
+  .recheck section .col2 span:last-child {
     margin-right: 0; }
-.recheck section {
+  .recheck section .col2 span:nth-child(2n) {
+    margin-right: 0; }
+  .recheck section .col2 span:nth-child(2n+1) {
+    clear: left; }
+.recheck section.border {
   padding: 10px;
   border: solid 1px #999; }
-.recheck section.table {
+.recheck section section.table {
   padding: 0;
-  border: none; }
-  .recheck section.table:after {
+  border: none;
+  margin: 0 0 20px; }
+  .recheck section section.table caption {
+    border: none;
+    font-weight: bold;
+    color: #333;
+    padding-left: 0; }
+    .recheck section section.table caption:before {
+      display: none; }
+  .recheck section section.table:after {
     display: none; }
-  .recheck section.table th, .recheck section.table td {
+  .recheck section section.table th, .recheck section section.table td {
     border-right: solid 1px #eee;
     padding: 5px 10px; }
-  .recheck section.table td {
+  .recheck section section.table td {
     color: #2d5d7b;
     background-color: #fff;
     border-top: solid 1px #eee; }
-  .recheck section.table th {
+  .recheck section section.table th {
     background-color: #eee;
     font-weight: bold;
     color: #333; }
-.recheck p {
+.recheck section p {
   margin: 0;
-  font-size: 13px; }
-  .recheck p label:first-child {
+  font-size: 13px;
+  padding-left: 0 !important; }
+  .recheck section p label:first-child {
     text-align: left;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 16.40792%; }
-    .recheck p label:first-child:last-child {
+    .recheck section p label:first-child:last-child {
       margin-right: 0; }
-  .recheck p cite {
+  .recheck section p cite {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 81.23443%;
     font-style: normal; }
-    .recheck p cite:last-child {
+    .recheck section p cite:last-child {
       margin-right: 0; }
-.recheck h3 {
-  font-family: tahoma;
-  font-size: 16px; }
-.recheck h4 {
-  margin-bottom: 5px; }
-.recheck .u {
+    .recheck section p cite a {
+      text-decoration: underline;
+      color: #333; }
+    .recheck section p cite a:hover {
+      text-decoration: none; }
+.recheck section h5 {
+  margin-bottom: 5px;
+  font-size: 14px; }
+.recheck section .u {
   text-decoration: underline; }
-.recheck em {
+.recheck section em {
   font-style: normal;
   font-weight: bold; }
-  .recheck em.blue {
+  .recheck section em.blue {
     color: blue; }
-  .recheck em.green {
+  .recheck section em.green {
     color: #257b4f; }
-.recheck .label8 p label:first-child {
+.recheck section .label8 p label:first-child {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%; }
-  .recheck .label8 p label:first-child:last-child {
+  .recheck section .label8 p label:first-child:last-child {
     margin-right: 0; }
-.recheck .label8 cite {
+.recheck section .label8 cite {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 74.41059%; }
-  .recheck .label8 cite:last-child {
+  .recheck section .label8 cite:last-child {
     margin-right: 0; }
-.recheck .type21 thead tr th {
+.recheck section .type21 thead tr th {
   width: 15%;
   white-space: normal; }
-.recheck .type21 thead tr th:first-child {
+.recheck section .type21 thead tr th:first-child {
   width: 55%; }
-.recheck .type21 tbody tr td:first-child, .recheck .type21 tbody tr td:nth-child(3) {
+.recheck section .type21 tbody tr td:first-child, .recheck section .type21 tbody tr td:nth-child(3) {
   text-align: left; }
+.recheck section .type22 thead tr th:first-child {
+  width: 20%; }
+.recheck section .type22 thead tr th:nth-child(3) {
+  width: 20%; }
+.recheck section .type22 tbody tr td:nth-child(2) {
+  text-align: left; }
+.recheck section .type23 thead tr th:first-child {
+  width: 25%; }
+.recheck section .type23 thead tr th:nth-child(3) {
+  width: 25%; }
+.recheck section .type23 tbody tr td:first-child, .recheck section .type23 tbody tr td:nth-child(2) {
+  text-align: left; }
+.recheck section .multiline label:first-child {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .recheck section .multiline label:first-child:last-child {
+    margin-right: 0; }
+.recheck section .multiline cite {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 20px; }
+  .recheck section .multiline cite:last-child {
+    margin-right: 0; }
 
 /* ==========================================================================
    Helper classes

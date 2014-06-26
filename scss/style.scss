@@ -625,29 +625,38 @@ div.bg { background: #fff; padding: 20px 10px; margin-top: -15px; }
 
 
 .right { text-align: right;  }
-
-.recheck {
+.recheck { margin-top: 0!important;
+  h3 { font-family: tahoma; font-size: 16px; }
+}
+.recheck section {
+  input { width: auto!important; height: auto!important;  }
   .col3 {
-    span { @include span-columns(4); }
+    span { @include span-columns(4); @include omega(3n) }
   }
   .col2 {
-    span { @include span-columns(6); }
+    span { @include span-columns(6); @include omega(2n) }
   }
-  section { padding: 10px; border: solid 1px #999; }
-  section.table { padding: 0; border: none; 
+  &.border { padding: 10px; border: solid 1px #999; }
+  section.table { padding: 0; border: none; margin: 0 0 20px;
+    caption { border:none; font-weight: bold; color: #333; padding-left: 0;
+      &:before { display: none; }
+    }
     &:after { display: none; }
     th, td { border-right: solid 1px #eee; padding: 5px 10px; }
     td { color: $blue;  background-color: #fff; border-top: solid 1px #eee;}
     th { background-color: #eee; font-weight: bold; color: #333; }
   }
-  p { margin: 0; font-size: 13px;
+  p { margin: 0; font-size: 13px; padding-left: 0!important;
     label:first-child { text-align: left; @include span-columns(2.2);  }
-    cite { @include span-columns(9.8); font-style: normal; }
+    cite { @include span-columns(9.8); font-style: normal;
+      a {text-decoration: underline; color: #333; }
+      a:hover { text-decoration: none; }
+    }
   }
-  h3 { font-family: tahoma; font-size: 16px; }
-  h4 { margin-bottom: 5px; }
+  
+  h5 { margin-bottom: 5px; font-size: 14px; }
   .u { text-decoration: underline; }
-  em { font-style: normal; font-weight: bold; 
+  em { font-style: normal; font-weight: bold;
     &.blue { color: blue; }
     &.green { color: $green; }
   }
@@ -655,13 +664,37 @@ div.bg { background: #fff; padding: 20px 10px; margin-top: -15px; }
     p label:first-child { @include span-columns(3); }
     cite { @include span-columns(9); }
   }
-  .type21 { 
-    thead tr { 
+  .type21 {
+    thead tr {
       th { width: 15%; white-space: normal; }
       th:first-child { width: 55%; }
     }
     tbody tr {
       td:first-child, td:nth-child(3) { text-align: left; }
     }
+  }
+  .type22 {
+    thead tr {
+      th:first-child { width: 20%; }
+      th:nth-child(3) { width: 20%; }
+    }
+    tbody tr {
+      td:nth-child(2) { text-align: left;}
+    }
+  }
+
+  .type23 {
+    thead tr {
+      th:first-child { width: 25%; }
+      th:nth-child(3) { width: 25%; }
+    }
+    tbody tr {
+      td:first-child, td:nth-child(2) { text-align: left;}
+    }
+  }
+
+  .multiline {
+    label:first-child { @include span-columns(12) }
+    cite { @include span-columns(12); margin-bottom: 20px; }
   }
 }

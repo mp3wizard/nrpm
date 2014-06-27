@@ -456,12 +456,18 @@ p.center { text-align: center; }
 }
 #tab3.send_agreement {
   section.checkbox, section.radio {
-    p {
+    p { padding-right: 0;
       input:first-child { width: auto; }
       input { @include span-columns(1); }
       label:nth-child(2) { @include span-columns(8); text-align: left; white-space: normal;
         &:after { display: none; }
       }
+    }
+    p.input-m {
+      input[type="text"] { @include span-columns(3.5) }
+    }
+    p.input-l {
+      input[type="text"] { @include span-columns(8) }
     }
   }
   section.checkbox.textarea {
@@ -485,6 +491,7 @@ p.center { text-align: center; }
         ~label { text-align: left; float: left; line-height: 28px; }
       }
   }
+  p { padding-right: 25px; }
 }
 
 h3.small { font-size: 13px; font-family: tahoma; color: $blue; background-color: #9ce9b9; padding: 8px 25px; border-bottom: solid 1px #41624e; font-weight: normal; text-align: left; margin: 10px;
@@ -653,7 +660,7 @@ div.bg { background: #fff; padding: 20px 10px; margin-top: -15px; }
       a:hover { text-decoration: none; }
     }
   }
-  
+
   h5 { margin-bottom: 5px; font-size: 14px; }
   .u { text-decoration: underline; }
   em { font-style: normal; font-weight: bold;

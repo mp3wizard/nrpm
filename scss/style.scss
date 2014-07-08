@@ -51,7 +51,7 @@ header { background-color: #edffd8;
     a { font-weight: normal; }
   }
 }
-main { padding: 20px 15px 100px; @extend .clearfix; background: #fff url('../img/bg-main.jpg') repeat-x left top;
+main { padding: 20px 15px 100px; @extend .clearfix; background: #fff url('../img/bg-main.jpg') repeat-x left top; display: block;
   >aside { @include span-columns(3); background-color: #fff7ec; padding: 10px; }
   >article { @include span-columns(9); }
 }

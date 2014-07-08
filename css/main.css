@@ -1826,7 +1826,8 @@ header {
 
 main {
   padding: 20px 15px 100px;
-  background: white url("../img/bg-main.jpg") repeat-x left top; }
+  background: white url("../img/bg-main.jpg") repeat-x left top;
+  display: block; }
   main > aside {
     float: left;
     display: block;
